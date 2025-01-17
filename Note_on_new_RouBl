@@ -1,0 +1,3 @@
+Currently I am going to handle the gradients layer-wise as a dictionary, just for ease of separation. I think this might lead to some slowness since I 
+have to keep iterating through the dictionary. In the long-term it may be more efficient to just have a massive vector for the gradients of all layers and then 
+split that...although that also requires iteration, I must admit.
