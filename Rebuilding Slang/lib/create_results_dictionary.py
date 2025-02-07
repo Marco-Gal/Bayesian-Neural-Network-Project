@@ -4,7 +4,7 @@
 # @Last modified by:   aaronmishkin
 # @Last modified time: 18-08-24
 
-from lib.utilities.general_utilities import cast_to_cpu
+from lib.general_utilities import cast_to_cpu
 
 def create_results_dictionary(save_options, final_metrics, metric_history, objective_history, model, optimizer):
 

@@ -7,10 +7,10 @@
 import torch
 import numpy as np
 
-import lib.metrics.metric_factory as metric_factory
-from lib.experiments.printers import print_progress, print_objective
-from lib.experiments.evaluate_model import evaluate_model
-from lib.experiments.create_results_dictionary import create_results_dictionary
+import lib.metric_factory as metric_factory # 
+from lib.printers import print_progress, print_objective # 
+from lib.evaluate_model import evaluate_model # 
+from lib.create_results_dictionary import create_results_dictionary # 
 
 def run_experiment(data,
                    model,

@@ -9,8 +9,8 @@ import numpy as np
 
 import lib.metric_factory as metric_factory # 
 from lib.printers import print_cv_progress, print_cv_objective # 
-from lib.evaluate_model import evaluate_model
-from lib.experiments.create_results_dictionary import create_results_dictionary
+from lib.evaluate_model import evaluate_model # 
+from lib.create_results_dictionary import create_results_dictionary # 
 
 def run_cv_experiment(data,
                       n_splits,
