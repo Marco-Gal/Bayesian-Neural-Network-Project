@@ -1,15 +1,15 @@
 import torch
 from artemis.experiments import ExperimentFunction
 
-from lib.data.datasets import Dataset, DEFAULT_DATA_FOLDER
-from lib.experiments.experiment import run_experiment
-from lib.plots.basics import plot_objective
-from lib.utilities.general_utilities import set_seeds
+from lib.datasets import Dataset, DEFAULT_DATA_FOLDER #
+from lib.experiment import run_experiment #
+from lib.plots.basics import plot_objective #
+from lib.general_utilities import set_seeds #
 
 import pdb
 
-import experiments.default_parameters as defaults
-from experiments.base.slang_experiments import init_slang_experiment
+import default_parameters as defaults # 
+from slang_experiments import init_slang_experiment # 
 
 MNIST_OPTIM_PARAM = {
     'num_epochs': 100,

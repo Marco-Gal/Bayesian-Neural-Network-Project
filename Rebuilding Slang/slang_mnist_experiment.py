@@ -1,6 +1,6 @@
 import copy
 import math
-import experiments.mnist.slang_mnist_complete as slang_mnist_complete
+import slang_mnist_complete as slang_mnist_complete
 
 experiment_name = "slang_mnist_experiment"
 val_data_set = 'mnist_val'
