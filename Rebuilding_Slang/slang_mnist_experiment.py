@@ -9,14 +9,18 @@ prior_prec = 1/math.exp(-2)**2
 
 # set the model parameters
 model_params = {
-    'hidden_sizes': [400,400],
+    # 'hidden_sizes': [400,400],
+    'hidden_sizes': [2,2],
+
     'activation_function': 'relu',
     'prior_precision': prior_prec, # All values of L preferred this value
     'bias_prior_precision': 1e-6,
     'noise_precision': None } # Classification Problem
 
 optimizer_params = {
-    'num_epochs': 100,            # should be 100
+    # 'num_epochs': 100,            # should be 100
+    'num_epochs': 10,            # should be 100
+
     'batch_size': 200,
     'learning_rate': 0.1,
     'momentum_rate': 0.9,
