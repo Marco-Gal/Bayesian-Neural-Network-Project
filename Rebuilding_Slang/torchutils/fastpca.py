@@ -61,8 +61,8 @@ def eigsh_func(f, dtype, device, n, k=6, n_iter=4, L=None):
             r"""
             Efficient implementation of SVD on [N x D] matrix, D >> N.
             """
-            (e, V) = torch.symeig(A @ A.t(), eigenvectors=True)
-            
+            # (e, V) = torch.symeig(A @ A.t(), eigenvectors=True)
+            (e, V) = torch.linalg.eigh(A @ A.t()) # i think this is a valid replacement
             Sigma = torch.sqrt(e)
             SigInv = 1/Sigma 
             SigInv[torch.isnan(SigInv)] = 0
@@ -74,8 +74,10 @@ def eigsh_func(f, dtype, device, n, k=6, n_iter=4, L=None):
         E = f(Q) + anorm * Q
         R = Q.t() @ E
         R = (R + R.t()) / 2
-        R = torch.potrf(R, upper=False) # Cholesky
-        (tmp, _) = torch.gesv(E.t(), R) # Solve
+        R = torch.linalg.cholesky(R, upper=False) # Cholesky
+        # (tmp, _) = torch.gesv(E.t(), R) # Solve
+        tmp = torch.linalg.solve_triangular(R, E.t(), upper=False)  # Solve
+
         V, d, _ = svd_thin_matrix(tmp)
         d = d * d - anorm
         return d, V

@@ -60,7 +60,9 @@ def invMult(U, d, x):
     Kinv = I_k + U.t() @ (dInv * U)
 
     s1 = U.t() @ (dInv * x)
-    s2, _ = torch.gesv(s1, Kinv)
+    # s2, _ = torch.gesv(s1, Kinv)
+    s2 = torch.linalg.solve(Kinv, s1)
+
     return dInv*(x - (U @ s2))
 
 def factCore(V, reduce_flag=False):
@@ -76,8 +78,10 @@ def factCore(V, reduce_flag=False):
             V = reduceRank(V)
             
         I_k = torch.eye(V.shape[1], dtype=V.dtype, device=V.device)
-        L = torch.potrf(V.t() @ V, upper=False)
-        M = torch.potrf(I_k + L.t() @ L, upper=False)
+        # L = torch.potrf(V.t() @ V, upper=False)
+        # M = torch.potrf(I_k + L.t() @ L, upper=False)
+        L = torch.linalg.cholesky(V.t() @ V, upper=False)
+        M = torch.linalg.cholesky(I_k + L.t() @ L, upper=False)
         Linv = torch.inverse(L)
         K = Linv.t() @ (M - I_k) @ Linv
         
@@ -155,7 +159,9 @@ def invFacts(U, d):
     Kinv = I_k + U.t() @ (dInv * U)
 
     s1 = (U * dInv).t()
-    s2, _ = torch.gesv(s1, Kinv)
+    # s2, _ = torch.gesv(s1, Kinv)
+    s2 = torch.linalg.solve(Kinv, s1)
+
     return dInv*U, s2, dInv
 
 def invDiag(U, d):
