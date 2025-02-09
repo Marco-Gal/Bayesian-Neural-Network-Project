@@ -1,0 +1,570 @@
+Arguments:
+['python', 'submit_mnist_experiment.py']
+
+Return Code:
+0
+
+Standard Output:
+python d:\Maths_Y4\Project\Bayesian-Neural-Network-Project\Rebuilding_Slang\run_experiment.py --name="slang_mnist_experiment" --variant="L_1" --method="SLANG_COMPLETE" --cv=0
+args: Namespace(name='slang_mnist_experiment', variant='L_1', method='SLANG_COMPLETE', cv=0)
+c:\Users\peter\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\_reduction.py:51: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+d:\Maths_Y4\Project\Bayesian-Neural-Network-Project\Rebuilding_Slang\torchutils\fastpca.py:49: UserWarning: torch.qr is deprecated in favor of torch.linalg.qr and will be removed in a future PyTorch release.
+The boolean parameter 'some' has been replaced with a string parameter 'mode'.
+Q, R = torch.qr(A, some)
+should be replaced with
+Q, R = torch.linalg.qr(A, 'reduced' if some else 'complete') (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\BatchLinearAlgebra.cpp:2491.)
+  (Q, _) = torch.qr(A)
+Epoch [1/10], train_pred_logloss: 2.3236, train_pred_accuracy: 0.1136, elbo_neg_ave: 2.4405, test_pred_logloss: 2.4057, test_pred_accuracy: 0.1064
+Epoch [1/10], Objective: 2.6948
+Epoch [2/10], train_pred_logloss: 2.3065, train_pred_accuracy: 0.1136, elbo_neg_ave: 2.3886, test_pred_logloss: 2.3266, test_pred_accuracy: 0.1064
+Epoch [2/10], Objective: 2.3138
+Epoch [3/10], train_pred_logloss: 2.3029, train_pred_accuracy: 0.1136, elbo_neg_ave: 2.3656, test_pred_logloss: 2.3077, test_pred_accuracy: 0.1064
+Epoch [3/10], Objective: 2.3053
+Epoch [4/10], train_pred_logloss: 2.3019, train_pred_accuracy: 0.1136, elbo_neg_ave: 2.3512, test_pred_logloss: 2.3023, test_pred_accuracy: 0.1064
+Epoch [4/10], Objective: 2.3025
+Epoch [5/10], train_pred_logloss: 2.3013, train_pred_accuracy: 0.1136, elbo_neg_ave: 2.3411, test_pred_logloss: 2.3020, test_pred_accuracy: 0.1064
+Epoch [5/10], Objective: 2.3019
+Epoch [6/10], train_pred_logloss: 2.3011, train_pred_accuracy: 0.1136, elbo_neg_ave: 2.3336, test_pred_logloss: 2.3020, test_pred_accuracy: 0.1064
+Epoch [6/10], Objective: 2.3014
+Epoch [7/10], train_pred_logloss: 2.3011, train_pred_accuracy: 0.1136, elbo_neg_ave: 2.3279, test_pred_logloss: 2.3021, test_pred_accuracy: 0.1064
+Epoch [7/10], Objective: 2.3012
+Epoch [8/10], train_pred_logloss: 2.3011, train_pred_accuracy: 0.1136, elbo_neg_ave: 2.3233, test_pred_logloss: 2.3019, test_pred_accuracy: 0.1064
+Epoch [8/10], Objective: 2.3011
+Epoch [9/10], train_pred_logloss: 2.3011, train_pred_accuracy: 0.1136, elbo_neg_ave: 2.3195, test_pred_logloss: 2.3020, test_pred_accuracy: 0.1064
+Epoch [9/10], Objective: 2.3012
+Epoch [10/10], train_pred_logloss: 2.3011, train_pred_accuracy: 0.1136, elbo_neg_ave: 2.3165, test_pred_logloss: 2.3018, test_pred_accuracy: 0.1064
+Epoch [10/10], Objective: 2.3011
+Epoch [1/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3117, test_pred_logloss: 2.3018, test_pred_accuracy: 0.1135
+Epoch [1/10], Objective: 2.3013
+Epoch [2/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3098, test_pred_logloss: 2.3017, test_pred_accuracy: 0.1135
+Epoch [2/10], Objective: 2.3013
+Epoch [3/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3084, test_pred_logloss: 2.3016, test_pred_accuracy: 0.1135
+Epoch [3/10], Objective: 2.3013
+Epoch [4/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3073, test_pred_logloss: 2.3012, test_pred_accuracy: 0.1135
+Epoch [4/10], Objective: 2.3012
+Epoch [5/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3066, test_pred_logloss: 2.3012, test_pred_accuracy: 0.1135
+Epoch [5/10], Objective: 2.3013
+Epoch [6/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3059, test_pred_logloss: 2.3011, test_pred_accuracy: 0.1135
+Epoch [6/10], Objective: 2.3013
+Epoch [7/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3055, test_pred_logloss: 2.3012, test_pred_accuracy: 0.1135
+Epoch [7/10], Objective: 2.3013
+Epoch [8/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3052, test_pred_logloss: 2.3011, test_pred_accuracy: 0.1135
+Epoch [8/10], Objective: 2.3013
+Epoch [9/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3049, test_pred_logloss: 2.3011, test_pred_accuracy: 0.1135
+Epoch [9/10], Objective: 2.3013
+Epoch [10/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3047, test_pred_logloss: 2.3011, test_pred_accuracy: 0.1135
+Epoch [10/10], Objective: 2.3013
+Epoch [1/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3046, test_pred_logloss: 2.3011, test_pred_accuracy: 0.1135
+Epoch [1/10], Objective: 2.3012
+Epoch [2/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3045, test_pred_logloss: 2.2990, test_pred_accuracy: 0.1135
+Epoch [2/10], Objective: 2.3013
+Epoch [3/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3044, test_pred_logloss: 2.3011, test_pred_accuracy: 0.1135
+Epoch [3/10], Objective: 2.3013
+Epoch [4/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3044, test_pred_logloss: 2.3006, test_pred_accuracy: 0.1135
+Epoch [4/10], Objective: 2.3012
+Epoch [5/10], train_pred_logloss: 2.3012, train_pred_accuracy: 0.1124, elbo_neg_ave: 2.3043, test_pred_logloss: 2.3010, test_pred_accuracy: 0.1135
+Epoch [5/10], Objective: 2.3013
+Epoch [6/10], train_pred_logloss: 2.2936, train_pred_accuracy: 0.1132, elbo_neg_ave: 2.3034, test_pred_logloss: 2.2998, test_pred_accuracy: 0.1136
+Epoch [6/10], Objective: 2.3013
+Epoch [7/10], train_pred_logloss: 2.0287, train_pred_accuracy: 0.2237, elbo_neg_ave: 2.0388, test_pred_logloss: 2.0358, test_pred_accuracy: 0.2243
+Epoch [7/10], Objective: 2.1202
+Epoch [8/10], train_pred_logloss: 1.9563, train_pred_accuracy: 0.2696, elbo_neg_ave: 1.9664, test_pred_logloss: 1.9653, test_pred_accuracy: 0.2681
+Epoch [8/10], Objective: 1.9943
+Epoch [9/10], train_pred_logloss: 1.9069, train_pred_accuracy: 0.2800, elbo_neg_ave: 1.9227, test_pred_logloss: 1.9144, test_pred_accuracy: 0.2769
+Epoch [9/10], Objective: 1.9380
+Epoch [10/10], train_pred_logloss: 1.6153, train_pred_accuracy: 0.4029, elbo_neg_ave: 1.6329, test_pred_logloss: 1.6146, test_pred_accuracy: 0.3971
+Epoch [10/10], Objective: 1.7763
+Epoch [1/10], train_pred_logloss: 1.5278, train_pred_accuracy: 0.4308, elbo_neg_ave: 1.5452, test_pred_logloss: 1.5307, test_pred_accuracy: 0.4307
+Epoch [1/10], Objective: 1.5771
+Epoch [2/10], train_pred_logloss: 1.4332, train_pred_accuracy: 0.4853, elbo_neg_ave: 1.4530, test_pred_logloss: 1.4345, test_pred_accuracy: 0.4918
+Epoch [2/10], Objective: 1.4860
+Epoch [3/10], train_pred_logloss: 1.3593, train_pred_accuracy: 0.5303, elbo_neg_ave: 1.3830, test_pred_logloss: 1.3704, test_pred_accuracy: 0.5276
+Epoch [3/10], Objective: 1.4020
+Epoch [4/10], train_pred_logloss: 1.3107, train_pred_accuracy: 0.5467, elbo_neg_ave: 1.3323, test_pred_logloss: 1.3178, test_pred_accuracy: 0.5457
+Epoch [4/10], Objective: 1.3424
+Epoch [5/10], train_pred_logloss: 1.2731, train_pred_accuracy: 0.5608, elbo_neg_ave: 1.2955, test_pred_logloss: 1.2830, test_pred_accuracy: 0.5613
+Epoch [5/10], Objective: 1.2982
+Epoch [6/10], train_pred_logloss: 1.2402, train_pred_accuracy: 0.5674, elbo_neg_ave: 1.2647, test_pred_logloss: 1.2523, test_pred_accuracy: 0.5683
+Epoch [6/10], Objective: 1.2611
+Epoch [7/10], train_pred_logloss: 1.2147, train_pred_accuracy: 0.5767, elbo_neg_ave: 1.2381, test_pred_logloss: 1.2298, test_pred_accuracy: 0.5708
+Epoch [7/10], Objective: 1.2322
+Epoch [8/10], train_pred_logloss: 1.1937, train_pred_accuracy: 0.5794, elbo_neg_ave: 1.2193, test_pred_logloss: 1.2085, test_pred_accuracy: 0.5788
+Epoch [8/10], Objective: 1.2093
+Epoch [9/10], train_pred_logloss: 1.1787, train_pred_accuracy: 0.5814, elbo_neg_ave: 1.2030, test_pred_logloss: 1.1922, test_pred_accuracy: 0.5796
+Epoch [9/10], Objective: 1.1903
+Epoch [10/10], train_pred_logloss: 1.1653, train_pred_accuracy: 0.5872, elbo_neg_ave: 1.1915, test_pred_logloss: 1.1787, test_pred_accuracy: 0.5846
+Epoch [10/10], Objective: 1.1751
+python d:\Maths_Y4\Project\Bayesian-Neural-Network-Project\Rebuilding_Slang\run_experiment.py --name="slang_mnist_experiment" --variant="L_2" --method="SLANG_COMPLETE" --cv=0
+args: Namespace(name='slang_mnist_experiment', variant='L_2', method='SLANG_COMPLETE', cv=0)
+c:\Users\peter\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\_reduction.py:51: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+d:\Maths_Y4\Project\Bayesian-Neural-Network-Project\Rebuilding_Slang\torchutils\fastpca.py:49: UserWarning: torch.qr is deprecated in favor of torch.linalg.qr and will be removed in a future PyTorch release.
+The boolean parameter 'some' has been replaced with a string parameter 'mode'.
+Q, R = torch.qr(A, some)
+should be replaced with
+Q, R = torch.linalg.qr(A, 'reduced' if some else 'complete') (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\BatchLinearAlgebra.cpp:2491.)
+  (Q, _) = torch.qr(A)
+Epoch [1/10], train_pred_logloss: 1.5684, train_pred_accuracy: 0.3881, elbo_neg_ave: 1.5955, test_pred_logloss: 1.5468, test_pred_accuracy: 0.3947
+Epoch [1/10], Objective: 1.9008
+Epoch [2/10], train_pred_logloss: 1.3972, train_pred_accuracy: 0.4442, elbo_neg_ave: 1.4237, test_pred_logloss: 1.3690, test_pred_accuracy: 0.4541
+Epoch [2/10], Objective: 1.4694
+Epoch [3/10], train_pred_logloss: 1.3298, train_pred_accuracy: 0.5195, elbo_neg_ave: 1.3588, test_pred_logloss: 1.3081, test_pred_accuracy: 0.5286
+Epoch [3/10], Objective: 1.3663
+Epoch [4/10], train_pred_logloss: 1.2789, train_pred_accuracy: 0.5449, elbo_neg_ave: 1.3090, test_pred_logloss: 1.2537, test_pred_accuracy: 0.5607
+Epoch [4/10], Objective: 1.3103
+Epoch [5/10], train_pred_logloss: 1.2426, train_pred_accuracy: 0.5608, elbo_neg_ave: 1.2732, test_pred_logloss: 1.2166, test_pred_accuracy: 0.5728
+Epoch [5/10], Objective: 1.2658
+Epoch [6/10], train_pred_logloss: 1.2157, train_pred_accuracy: 0.5751, elbo_neg_ave: 1.2491, test_pred_logloss: 1.1913, test_pred_accuracy: 0.5814
+Epoch [6/10], Objective: 1.2345
+Epoch [7/10], train_pred_logloss: 1.1897, train_pred_accuracy: 0.5842, elbo_neg_ave: 1.2285, test_pred_logloss: 1.1671, test_pred_accuracy: 0.5953
+Epoch [7/10], Objective: 1.2075
+Epoch [8/10], train_pred_logloss: 1.1641, train_pred_accuracy: 0.6150, elbo_neg_ave: 1.1974, test_pred_logloss: 1.1385, test_pred_accuracy: 0.6193
+Epoch [8/10], Objective: 1.1840
+Epoch [9/10], train_pred_logloss: 1.1417, train_pred_accuracy: 0.6306, elbo_neg_ave: 1.1756, test_pred_logloss: 1.1172, test_pred_accuracy: 0.6393
+Epoch [9/10], Objective: 1.1586
+Epoch [10/10], train_pred_logloss: 1.1227, train_pred_accuracy: 0.6349, elbo_neg_ave: 1.1604, test_pred_logloss: 1.0989, test_pred_accuracy: 0.6437
+Epoch [10/10], Objective: 1.1380
+Epoch [1/10], train_pred_logloss: 1.0971, train_pred_accuracy: 0.6466, elbo_neg_ave: 1.1278, test_pred_logloss: 1.0874, test_pred_accuracy: 0.6497
+Epoch [1/10], Objective: 1.1126
+Epoch [2/10], train_pred_logloss: 1.0812, train_pred_accuracy: 0.6485, elbo_neg_ave: 1.1124, test_pred_logloss: 1.0707, test_pred_accuracy: 0.6563
+Epoch [2/10], Objective: 1.0932
+Epoch [3/10], train_pred_logloss: 1.0692, train_pred_accuracy: 0.6525, elbo_neg_ave: 1.1021, test_pred_logloss: 1.0609, test_pred_accuracy: 0.6541
+Epoch [3/10], Objective: 1.0795
+Epoch [4/10], train_pred_logloss: 1.0608, train_pred_accuracy: 0.6540, elbo_neg_ave: 1.0937, test_pred_logloss: 1.0534, test_pred_accuracy: 0.6583
+Epoch [4/10], Objective: 1.0690
+Epoch [5/10], train_pred_logloss: 1.0551, train_pred_accuracy: 0.6554, elbo_neg_ave: 1.0876, test_pred_logloss: 1.0459, test_pred_accuracy: 0.6651
+Epoch [5/10], Objective: 1.0616
+Epoch [6/10], train_pred_logloss: 1.0493, train_pred_accuracy: 0.6567, elbo_neg_ave: 1.0828, test_pred_logloss: 1.0411, test_pred_accuracy: 0.6632
+Epoch [6/10], Objective: 1.0553
+Epoch [7/10], train_pred_logloss: 1.0443, train_pred_accuracy: 0.6581, elbo_neg_ave: 1.0785, test_pred_logloss: 1.0362, test_pred_accuracy: 0.6641
+Epoch [7/10], Objective: 1.0500
+Epoch [8/10], train_pred_logloss: 1.0409, train_pred_accuracy: 0.6603, elbo_neg_ave: 1.0745, test_pred_logloss: 1.0322, test_pred_accuracy: 0.6686
+Epoch [8/10], Objective: 1.0460
+Epoch [9/10], train_pred_logloss: 1.0364, train_pred_accuracy: 0.6595, elbo_neg_ave: 1.0707, test_pred_logloss: 1.0289, test_pred_accuracy: 0.6685
+Epoch [9/10], Objective: 1.0422
+Epoch [10/10], train_pred_logloss: 1.0342, train_pred_accuracy: 0.6603, elbo_neg_ave: 1.0683, test_pred_logloss: 1.0262, test_pred_accuracy: 0.6700
+Epoch [10/10], Objective: 1.0393
+Epoch [1/10], train_pred_logloss: 1.0319, train_pred_accuracy: 0.6613, elbo_neg_ave: 1.0664, test_pred_logloss: 1.0227, test_pred_accuracy: 0.6711
+Epoch [1/10], Objective: 1.0358
+Epoch [2/10], train_pred_logloss: 1.0295, train_pred_accuracy: 0.6621, elbo_neg_ave: 1.0639, test_pred_logloss: 1.0202, test_pred_accuracy: 0.6716
+Epoch [2/10], Objective: 1.0335
+Epoch [3/10], train_pred_logloss: 1.0267, train_pred_accuracy: 0.6627, elbo_neg_ave: 1.0618, test_pred_logloss: 1.0198, test_pred_accuracy: 0.6707
+Epoch [3/10], Objective: 1.0314
+Epoch [4/10], train_pred_logloss: 1.0245, train_pred_accuracy: 0.6637, elbo_neg_ave: 1.0600, test_pred_logloss: 1.0189, test_pred_accuracy: 0.6693
+Epoch [4/10], Objective: 1.0290
+Epoch [5/10], train_pred_logloss: 1.0231, train_pred_accuracy: 0.6634, elbo_neg_ave: 1.0580, test_pred_logloss: 1.0164, test_pred_accuracy: 0.6714
+Epoch [5/10], Objective: 1.0273
+Epoch [6/10], train_pred_logloss: 1.0213, train_pred_accuracy: 0.6637, elbo_neg_ave: 1.0571, test_pred_logloss: 1.0152, test_pred_accuracy: 0.6691
+Epoch [6/10], Objective: 1.0257
+Epoch [7/10], train_pred_logloss: 1.0200, train_pred_accuracy: 0.6649, elbo_neg_ave: 1.0557, test_pred_logloss: 1.0132, test_pred_accuracy: 0.6720
+Epoch [7/10], Objective: 1.0239
+Epoch [8/10], train_pred_logloss: 1.0188, train_pred_accuracy: 0.6663, elbo_neg_ave: 1.0542, test_pred_logloss: 1.0113, test_pred_accuracy: 0.6732
+Epoch [8/10], Objective: 1.0226
+Epoch [9/10], train_pred_logloss: 1.0170, train_pred_accuracy: 0.6653, elbo_neg_ave: 1.0523, test_pred_logloss: 1.0097, test_pred_accuracy: 0.6712
+Epoch [9/10], Objective: 1.0212
+Epoch [10/10], train_pred_logloss: 1.0161, train_pred_accuracy: 0.6662, elbo_neg_ave: 1.0515, test_pred_logloss: 1.0089, test_pred_accuracy: 0.6759
+Epoch [10/10], Objective: 1.0202
+Epoch [1/10], train_pred_logloss: 1.0154, train_pred_accuracy: 0.6656, elbo_neg_ave: 1.0509, test_pred_logloss: 1.0078, test_pred_accuracy: 0.6747
+Epoch [1/10], Objective: 1.0184
+Epoch [2/10], train_pred_logloss: 1.0143, train_pred_accuracy: 0.6664, elbo_neg_ave: 1.0495, test_pred_logloss: 1.0062, test_pred_accuracy: 0.6758
+Epoch [2/10], Objective: 1.0175
+Epoch [3/10], train_pred_logloss: 1.0127, train_pred_accuracy: 0.6675, elbo_neg_ave: 1.0486, test_pred_logloss: 1.0063, test_pred_accuracy: 0.6747
+Epoch [3/10], Objective: 1.0165
+Epoch [4/10], train_pred_logloss: 1.0115, train_pred_accuracy: 0.6683, elbo_neg_ave: 1.0476, test_pred_logloss: 1.0067, test_pred_accuracy: 0.6722
+Epoch [4/10], Objective: 1.0151
+Epoch [5/10], train_pred_logloss: 1.0108, train_pred_accuracy: 0.6673, elbo_neg_ave: 1.0464, test_pred_logloss: 1.0051, test_pred_accuracy: 0.6739
+Epoch [5/10], Objective: 1.0143
+Epoch [6/10], train_pred_logloss: 1.0096, train_pred_accuracy: 0.6679, elbo_neg_ave: 1.0462, test_pred_logloss: 1.0043, test_pred_accuracy: 0.6745
+Epoch [6/10], Objective: 1.0136
+Epoch [7/10], train_pred_logloss: 1.0093, train_pred_accuracy: 0.6693, elbo_neg_ave: 1.0455, test_pred_logloss: 1.0031, test_pred_accuracy: 0.6754
+Epoch [7/10], Objective: 1.0125
+Epoch [8/10], train_pred_logloss: 1.0083, train_pred_accuracy: 0.6701, elbo_neg_ave: 1.0445, test_pred_logloss: 1.0015, test_pred_accuracy: 0.6773
+Epoch [8/10], Objective: 1.0119
+Epoch [9/10], train_pred_logloss: 1.0073, train_pred_accuracy: 0.6688, elbo_neg_ave: 1.0432, test_pred_logloss: 1.0005, test_pred_accuracy: 0.6758
+Epoch [9/10], Objective: 1.0111
+Epoch [10/10], train_pred_logloss: 1.0069, train_pred_accuracy: 0.6697, elbo_neg_ave: 1.0428, test_pred_logloss: 1.0004, test_pred_accuracy: 0.6788
+Epoch [10/10], Objective: 1.0106
+python d:\Maths_Y4\Project\Bayesian-Neural-Network-Project\Rebuilding_Slang\run_experiment.py --name="slang_mnist_experiment" --variant="L_4" --method="SLANG_COMPLETE" --cv=0
+args: Namespace(name='slang_mnist_experiment', variant='L_4', method='SLANG_COMPLETE', cv=0)
+c:\Users\peter\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\_reduction.py:51: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+d:\Maths_Y4\Project\Bayesian-Neural-Network-Project\Rebuilding_Slang\torchutils\fastpca.py:49: UserWarning: torch.qr is deprecated in favor of torch.linalg.qr and will be removed in a future PyTorch release.
+The boolean parameter 'some' has been replaced with a string parameter 'mode'.
+Q, R = torch.qr(A, some)
+should be replaced with
+Q, R = torch.linalg.qr(A, 'reduced' if some else 'complete') (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\BatchLinearAlgebra.cpp:2491.)
+  (Q, _) = torch.qr(A)
+Epoch [1/10], train_pred_logloss: 2.2998, train_pred_accuracy: 0.1136, elbo_neg_ave: 2.3140, test_pred_logloss: 2.3007, test_pred_accuracy: 0.1064
+Epoch [1/10], Objective: 2.3256
+Epoch [2/10], train_pred_logloss: 1.9472, train_pred_accuracy: 0.2494, elbo_neg_ave: 1.9652, test_pred_logloss: 1.9461, test_pred_accuracy: 0.2363
+Epoch [2/10], Objective: 2.1268
+Epoch [3/10], train_pred_logloss: 1.8533, train_pred_accuracy: 0.2835, elbo_neg_ave: 1.8683, test_pred_logloss: 1.8479, test_pred_accuracy: 0.2789
+Epoch [3/10], Objective: 1.8974
+Epoch [4/10], train_pred_logloss: 1.8139, train_pred_accuracy: 0.3060, elbo_neg_ave: 1.8292, test_pred_logloss: 1.8098, test_pred_accuracy: 0.2935
+Epoch [4/10], Objective: 1.8357
+Epoch [5/10], train_pred_logloss: 1.7943, train_pred_accuracy: 0.3090, elbo_neg_ave: 1.8095, test_pred_logloss: 1.7884, test_pred_accuracy: 0.3046
+Epoch [5/10], Objective: 1.8073
+Epoch [6/10], train_pred_logloss: 1.7811, train_pred_accuracy: 0.3143, elbo_neg_ave: 1.7968, test_pred_logloss: 1.7774, test_pred_accuracy: 0.3053
+Epoch [6/10], Objective: 1.7907
+Epoch [7/10], train_pred_logloss: 1.7701, train_pred_accuracy: 0.3126, elbo_neg_ave: 1.7879, test_pred_logloss: 1.7670, test_pred_accuracy: 0.3077
+Epoch [7/10], Objective: 1.7800
+Epoch [8/10], train_pred_logloss: 1.7647, train_pred_accuracy: 0.3147, elbo_neg_ave: 1.7815, test_pred_logloss: 1.7578, test_pred_accuracy: 0.3095
+Epoch [8/10], Objective: 1.7719
+Epoch [9/10], train_pred_logloss: 1.7602, train_pred_accuracy: 0.3162, elbo_neg_ave: 1.7763, test_pred_logloss: 1.7536, test_pred_accuracy: 0.3126
+Epoch [9/10], Objective: 1.7659
+Epoch [10/10], train_pred_logloss: 1.7565, train_pred_accuracy: 0.3154, elbo_neg_ave: 1.7731, test_pred_logloss: 1.7491, test_pred_accuracy: 0.3162
+Epoch [10/10], Objective: 1.7609
+Epoch [1/10], train_pred_logloss: 1.7502, train_pred_accuracy: 0.3244, elbo_neg_ave: 1.7635, test_pred_logloss: 1.7506, test_pred_accuracy: 0.3286
+Epoch [1/10], Objective: 1.7552
+Epoch [2/10], train_pred_logloss: 1.7454, train_pred_accuracy: 0.3255, elbo_neg_ave: 1.7598, test_pred_logloss: 1.7448, test_pred_accuracy: 0.3279
+Epoch [2/10], Objective: 1.7501
+Epoch [3/10], train_pred_logloss: 1.7412, train_pred_accuracy: 0.3293, elbo_neg_ave: 1.7559, test_pred_logloss: 1.7422, test_pred_accuracy: 0.3334
+Epoch [3/10], Objective: 1.7455
+Epoch [4/10], train_pred_logloss: 1.7378, train_pred_accuracy: 0.3327, elbo_neg_ave: 1.7519, test_pred_logloss: 1.7396, test_pred_accuracy: 0.3336
+Epoch [4/10], Objective: 1.7418
+Epoch [5/10], train_pred_logloss: 1.7332, train_pred_accuracy: 0.3374, elbo_neg_ave: 1.7478, test_pred_logloss: 1.7349, test_pred_accuracy: 0.3352
+Epoch [5/10], Objective: 1.7379
+Epoch [6/10], train_pred_logloss: 1.7295, train_pred_accuracy: 0.3413, elbo_neg_ave: 1.7448, test_pred_logloss: 1.7320, test_pred_accuracy: 0.3350
+Epoch [6/10], Objective: 1.7341
+Epoch [7/10], train_pred_logloss: 1.7252, train_pred_accuracy: 0.3408, elbo_neg_ave: 1.7415, test_pred_logloss: 1.7264, test_pred_accuracy: 0.3371
+Epoch [7/10], Objective: 1.7308
+Epoch [8/10], train_pred_logloss: 1.7225, train_pred_accuracy: 0.3459, elbo_neg_ave: 1.7373, test_pred_logloss: 1.7232, test_pred_accuracy: 0.3463
+Epoch [8/10], Objective: 1.7271
+Epoch [9/10], train_pred_logloss: 1.7185, train_pred_accuracy: 0.3429, elbo_neg_ave: 1.7342, test_pred_logloss: 1.7161, test_pred_accuracy: 0.3455
+Epoch [9/10], Objective: 1.7229
+Epoch [10/10], train_pred_logloss: 1.7132, train_pred_accuracy: 0.3435, elbo_neg_ave: 1.7296, test_pred_logloss: 1.7114, test_pred_accuracy: 0.3433
+Epoch [10/10], Objective: 1.7190
+Epoch [1/10], train_pred_logloss: 1.7107, train_pred_accuracy: 0.3402, elbo_neg_ave: 1.7256, test_pred_logloss: 1.7073, test_pred_accuracy: 0.3455
+Epoch [1/10], Objective: 1.7145
+Epoch [2/10], train_pred_logloss: 1.7072, train_pred_accuracy: 0.3464, elbo_neg_ave: 1.7223, test_pred_logloss: 1.7011, test_pred_accuracy: 0.3440
+Epoch [2/10], Objective: 1.7104
+Epoch [3/10], train_pred_logloss: 1.7021, train_pred_accuracy: 0.3446, elbo_neg_ave: 1.7182, test_pred_logloss: 1.6981, test_pred_accuracy: 0.3405
+Epoch [3/10], Objective: 1.7066
+Epoch [4/10], train_pred_logloss: 1.6997, train_pred_accuracy: 0.3425, elbo_neg_ave: 1.7148, test_pred_logloss: 1.6972, test_pred_accuracy: 0.3408
+Epoch [4/10], Objective: 1.7032
+Epoch [5/10], train_pred_logloss: 1.6960, train_pred_accuracy: 0.3351, elbo_neg_ave: 1.7116, test_pred_logloss: 1.6926, test_pred_accuracy: 0.3370
+Epoch [5/10], Objective: 1.7001
+Epoch [6/10], train_pred_logloss: 1.6931, train_pred_accuracy: 0.3446, elbo_neg_ave: 1.7096, test_pred_logloss: 1.6906, test_pred_accuracy: 0.3314
+Epoch [6/10], Objective: 1.6972
+Epoch [7/10], train_pred_logloss: 1.6905, train_pred_accuracy: 0.3358, elbo_neg_ave: 1.7073, test_pred_logloss: 1.6867, test_pred_accuracy: 0.3312
+Epoch [7/10], Objective: 1.6949
+Epoch [8/10], train_pred_logloss: 1.6893, train_pred_accuracy: 0.3351, elbo_neg_ave: 1.7048, test_pred_logloss: 1.6859, test_pred_accuracy: 0.3386
+Epoch [8/10], Objective: 1.6925
+Epoch [9/10], train_pred_logloss: 1.6876, train_pred_accuracy: 0.3343, elbo_neg_ave: 1.7037, test_pred_logloss: 1.6820, test_pred_accuracy: 0.3409
+Epoch [9/10], Objective: 1.6903
+Epoch [10/10], train_pred_logloss: 1.6842, train_pred_accuracy: 0.3291, elbo_neg_ave: 1.7013, test_pred_logloss: 1.6807, test_pred_accuracy: 0.3301
+Epoch [10/10], Objective: 1.6885
+Epoch [1/10], train_pred_logloss: 1.6844, train_pred_accuracy: 0.3257, elbo_neg_ave: 1.6997, test_pred_logloss: 1.6791, test_pred_accuracy: 0.3376
+Epoch [1/10], Objective: 1.6866
+Epoch [2/10], train_pred_logloss: 1.6828, train_pred_accuracy: 0.3433, elbo_neg_ave: 1.6986, test_pred_logloss: 1.6755, test_pred_accuracy: 0.3406
+Epoch [2/10], Objective: 1.6849
+Epoch [3/10], train_pred_logloss: 1.6799, train_pred_accuracy: 0.3304, elbo_neg_ave: 1.6964, test_pred_logloss: 1.6741, test_pred_accuracy: 0.3301
+Epoch [3/10], Objective: 1.6833
+Epoch [4/10], train_pred_logloss: 1.6793, train_pred_accuracy: 0.3354, elbo_neg_ave: 1.6950, test_pred_logloss: 1.6756, test_pred_accuracy: 0.3335
+Epoch [4/10], Objective: 1.6818
+Epoch [5/10], train_pred_logloss: 1.6774, train_pred_accuracy: 0.3299, elbo_neg_ave: 1.6933, test_pred_logloss: 1.6733, test_pred_accuracy: 0.3317
+Epoch [5/10], Objective: 1.6805
+Epoch [6/10], train_pred_logloss: 1.6760, train_pred_accuracy: 0.3411, elbo_neg_ave: 1.6926, test_pred_logloss: 1.6732, test_pred_accuracy: 0.3214
+Epoch [6/10], Objective: 1.6790
+Epoch [7/10], train_pred_logloss: 1.6746, train_pred_accuracy: 0.3334, elbo_neg_ave: 1.6915, test_pred_logloss: 1.6700, test_pred_accuracy: 0.3248
+Epoch [7/10], Objective: 1.6779
+Epoch [8/10], train_pred_logloss: 1.6742, train_pred_accuracy: 0.3312, elbo_neg_ave: 1.6898, test_pred_logloss: 1.6704, test_pred_accuracy: 0.3362
+Epoch [8/10], Objective: 1.6766
+Epoch [9/10], train_pred_logloss: 1.6733, train_pred_accuracy: 0.3346, elbo_neg_ave: 1.6895, test_pred_logloss: 1.6669, test_pred_accuracy: 0.3381
+Epoch [9/10], Objective: 1.6754
+Epoch [10/10], train_pred_logloss: 1.6705, train_pred_accuracy: 0.3256, elbo_neg_ave: 1.6879, test_pred_logloss: 1.6666, test_pred_accuracy: 0.3232
+Epoch [10/10], Objective: 1.6742
+python d:\Maths_Y4\Project\Bayesian-Neural-Network-Project\Rebuilding_Slang\run_experiment.py --name="slang_mnist_experiment" --variant="L_8" --method="SLANG_COMPLETE" --cv=0
+args: Namespace(name='slang_mnist_experiment', variant='L_8', method='SLANG_COMPLETE', cv=0)
+c:\Users\peter\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\_reduction.py:51: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+d:\Maths_Y4\Project\Bayesian-Neural-Network-Project\Rebuilding_Slang\torchutils\fastpca.py:49: UserWarning: torch.qr is deprecated in favor of torch.linalg.qr and will be removed in a future PyTorch release.
+The boolean parameter 'some' has been replaced with a string parameter 'mode'.
+Q, R = torch.qr(A, some)
+should be replaced with
+Q, R = torch.linalg.qr(A, 'reduced' if some else 'complete') (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\BatchLinearAlgebra.cpp:2491.)
+  (Q, _) = torch.qr(A)
+Epoch [1/10], train_pred_logloss: 2.1939, train_pred_accuracy: 0.2036, elbo_neg_ave: 2.2228, test_pred_logloss: 2.1931, test_pred_accuracy: 0.1958
+Epoch [1/10], Objective: 2.2819
+Epoch [2/10], train_pred_logloss: 2.1583, train_pred_accuracy: 0.2051, elbo_neg_ave: 2.1821, test_pred_logloss: 2.1497, test_pred_accuracy: 0.1975
+Epoch [2/10], Objective: 2.1801
+Epoch [3/10], train_pred_logloss: 2.1327, train_pred_accuracy: 0.2060, elbo_neg_ave: 2.1542, test_pred_logloss: 2.1179, test_pred_accuracy: 0.1999
+Epoch [3/10], Objective: 2.1489
+Epoch [4/10], train_pred_logloss: 2.1142, train_pred_accuracy: 0.2068, elbo_neg_ave: 2.1355, test_pred_logloss: 2.1021, test_pred_accuracy: 0.2005
+Epoch [4/10], Objective: 2.1265
+Epoch [5/10], train_pred_logloss: 2.1027, train_pred_accuracy: 0.2075, elbo_neg_ave: 2.1227, test_pred_logloss: 2.0892, test_pred_accuracy: 0.2008
+Epoch [5/10], Objective: 2.1114
+Epoch [6/10], train_pred_logloss: 2.0937, train_pred_accuracy: 0.2080, elbo_neg_ave: 2.1135, test_pred_logloss: 2.0805, test_pred_accuracy: 0.2017
+Epoch [6/10], Objective: 2.1005
+Epoch [7/10], train_pred_logloss: 2.0860, train_pred_accuracy: 0.2082, elbo_neg_ave: 2.1060, test_pred_logloss: 2.0745, test_pred_accuracy: 0.2018
+Epoch [7/10], Objective: 2.0920
+Epoch [8/10], train_pred_logloss: 2.0800, train_pred_accuracy: 0.2084, elbo_neg_ave: 2.0998, test_pred_logloss: 2.0683, test_pred_accuracy: 0.2016
+Epoch [8/10], Objective: 2.0857
+Epoch [9/10], train_pred_logloss: 2.0747, train_pred_accuracy: 0.2090, elbo_neg_ave: 2.0946, test_pred_logloss: 2.0639, test_pred_accuracy: 0.2016
+Epoch [9/10], Objective: 2.0797
+Epoch [10/10], train_pred_logloss: 2.0714, train_pred_accuracy: 0.2092, elbo_neg_ave: 2.0905, test_pred_logloss: 2.0600, test_pred_accuracy: 0.2022
+Epoch [10/10], Objective: 2.0756
+Epoch [1/10], train_pred_logloss: 2.0642, train_pred_accuracy: 0.2080, elbo_neg_ave: 2.0805, test_pred_logloss: 2.0752, test_pred_accuracy: 0.2096
+Epoch [1/10], Objective: 2.0691
+Epoch [2/10], train_pred_logloss: 2.0603, train_pred_accuracy: 0.2082, elbo_neg_ave: 2.0764, test_pred_logloss: 2.0723, test_pred_accuracy: 0.2100
+Epoch [2/10], Objective: 2.0645
+Epoch [3/10], train_pred_logloss: 2.0567, train_pred_accuracy: 0.2086, elbo_neg_ave: 2.0732, test_pred_logloss: 2.0693, test_pred_accuracy: 0.2104
+Epoch [3/10], Objective: 2.0607
+Epoch [4/10], train_pred_logloss: 2.0046, train_pred_accuracy: 0.2872, elbo_neg_ave: 2.0495, test_pred_logloss: 2.0285, test_pred_accuracy: 0.2688
+Epoch [4/10], Objective: 2.0571
+Epoch [5/10], train_pred_logloss: 1.8326, train_pred_accuracy: 0.3069, elbo_neg_ave: 1.8572, test_pred_logloss: 1.8443, test_pred_accuracy: 0.3053
+Epoch [5/10], Objective: 1.9050
+Epoch [6/10], train_pred_logloss: 1.7676, train_pred_accuracy: 0.3097, elbo_neg_ave: 1.7923, test_pred_logloss: 1.7812, test_pred_accuracy: 0.3078
+Epoch [6/10], Objective: 1.8051
+Epoch [7/10], train_pred_logloss: 1.7273, train_pred_accuracy: 0.3283, elbo_neg_ave: 1.7539, test_pred_logloss: 1.7359, test_pred_accuracy: 0.3250
+Epoch [7/10], Objective: 1.7522
+Epoch [8/10], train_pred_logloss: 1.6922, train_pred_accuracy: 0.3352, elbo_neg_ave: 1.7169, test_pred_logloss: 1.7053, test_pred_accuracy: 0.3337
+Epoch [8/10], Objective: 1.7140
+Epoch [9/10], train_pred_logloss: 1.6692, train_pred_accuracy: 0.3464, elbo_neg_ave: 1.6947, test_pred_logloss: 1.6811, test_pred_accuracy: 0.3413
+Epoch [9/10], Objective: 1.6858
+Epoch [10/10], train_pred_logloss: 1.6494, train_pred_accuracy: 0.3487, elbo_neg_ave: 1.6734, test_pred_logloss: 1.6554, test_pred_accuracy: 0.3514
+Epoch [10/10], Objective: 1.6626
+Epoch [1/10], train_pred_logloss: 1.6292, train_pred_accuracy: 0.3554, elbo_neg_ave: 1.6550, test_pred_logloss: 1.6395, test_pred_accuracy: 0.3547
+Epoch [1/10], Objective: 1.6427
+Epoch [2/10], train_pred_logloss: 1.6129, train_pred_accuracy: 0.3556, elbo_neg_ave: 1.6392, test_pred_logloss: 1.6218, test_pred_accuracy: 0.3574
+Epoch [2/10], Objective: 1.6250
+Epoch [3/10], train_pred_logloss: 1.5974, train_pred_accuracy: 0.3727, elbo_neg_ave: 1.6240, test_pred_logloss: 1.6096, test_pred_accuracy: 0.3613
+Epoch [3/10], Objective: 1.6094
+Epoch [4/10], train_pred_logloss: 1.5844, train_pred_accuracy: 0.3702, elbo_neg_ave: 1.6102, test_pred_logloss: 1.5922, test_pred_accuracy: 0.3680
+Epoch [4/10], Objective: 1.5944
+Epoch [5/10], train_pred_logloss: 1.5710, train_pred_accuracy: 0.3754, elbo_neg_ave: 1.5973, test_pred_logloss: 1.5780, test_pred_accuracy: 0.3591
+Epoch [5/10], Objective: 1.5808
+Epoch [6/10], train_pred_logloss: 1.5579, train_pred_accuracy: 0.3760, elbo_neg_ave: 1.5858, test_pred_logloss: 1.5642, test_pred_accuracy: 0.3761
+Epoch [6/10], Objective: 1.5684
+Epoch [7/10], train_pred_logloss: 1.5489, train_pred_accuracy: 0.3783, elbo_neg_ave: 1.5752, test_pred_logloss: 1.5555, test_pred_accuracy: 0.3800
+Epoch [7/10], Objective: 1.5570
+Epoch [8/10], train_pred_logloss: 1.4997, train_pred_accuracy: 0.3896, elbo_neg_ave: 1.5287, test_pred_logloss: 1.5109, test_pred_accuracy: 0.3855
+Epoch [8/10], Objective: 1.5327
+Epoch [9/10], train_pred_logloss: 1.4715, train_pred_accuracy: 0.3896, elbo_neg_ave: 1.4991, test_pred_logloss: 1.4738, test_pred_accuracy: 0.3901
+Epoch [9/10], Objective: 1.4888
+Epoch [10/10], train_pred_logloss: 1.4512, train_pred_accuracy: 0.3935, elbo_neg_ave: 1.4799, test_pred_logloss: 1.4493, test_pred_accuracy: 0.3912
+Epoch [10/10], Objective: 1.4634
+Epoch [1/10], train_pred_logloss: 1.4339, train_pred_accuracy: 0.4038, elbo_neg_ave: 1.4637, test_pred_logloss: 1.4371, test_pred_accuracy: 0.4046
+Epoch [1/10], Objective: 1.4460
+Epoch [2/10], train_pred_logloss: 1.4241, train_pred_accuracy: 0.4175, elbo_neg_ave: 1.4530, test_pred_logloss: 1.4244, test_pred_accuracy: 0.4271
+Epoch [2/10], Objective: 1.4327
+Epoch [3/10], train_pred_logloss: 1.4134, train_pred_accuracy: 0.4311, elbo_neg_ave: 1.4427, test_pred_logloss: 1.4174, test_pred_accuracy: 0.4325
+Epoch [3/10], Objective: 1.4223
+Epoch [4/10], train_pred_logloss: 1.4059, train_pred_accuracy: 0.4310, elbo_neg_ave: 1.4350, test_pred_logloss: 1.4064, test_pred_accuracy: 0.4444
+Epoch [4/10], Objective: 1.4133
+Epoch [5/10], train_pred_logloss: 1.3979, train_pred_accuracy: 0.4349, elbo_neg_ave: 1.4282, test_pred_logloss: 1.4000, test_pred_accuracy: 0.4321
+Epoch [5/10], Objective: 1.4055
+Epoch [6/10], train_pred_logloss: 1.3918, train_pred_accuracy: 0.4336, elbo_neg_ave: 1.4222, test_pred_logloss: 1.3916, test_pred_accuracy: 0.4499
+Epoch [6/10], Objective: 1.3991
+Epoch [7/10], train_pred_logloss: 1.3875, train_pred_accuracy: 0.4358, elbo_neg_ave: 1.4173, test_pred_logloss: 1.3876, test_pred_accuracy: 0.4477
+Epoch [7/10], Objective: 1.3931
+Epoch [8/10], train_pred_logloss: 1.3814, train_pred_accuracy: 0.4356, elbo_neg_ave: 1.4104, test_pred_logloss: 1.3824, test_pred_accuracy: 0.4499
+Epoch [8/10], Objective: 1.3867
+Epoch [9/10], train_pred_logloss: 1.3769, train_pred_accuracy: 0.4550, elbo_neg_ave: 1.4066, test_pred_logloss: 1.3798, test_pred_accuracy: 0.4521
+Epoch [9/10], Objective: 1.3823
+Epoch [10/10], train_pred_logloss: 1.3727, train_pred_accuracy: 0.4565, elbo_neg_ave: 1.4033, test_pred_logloss: 1.3722, test_pred_accuracy: 0.4564
+Epoch [10/10], Objective: 1.3776
+python d:\Maths_Y4\Project\Bayesian-Neural-Network-Project\Rebuilding_Slang\run_experiment.py --name="slang_mnist_experiment" --variant="L_16" --method="SLANG_COMPLETE" --cv=0
+args: Namespace(name='slang_mnist_experiment', variant='L_16', method='SLANG_COMPLETE', cv=0)
+c:\Users\peter\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\_reduction.py:51: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+d:\Maths_Y4\Project\Bayesian-Neural-Network-Project\Rebuilding_Slang\torchutils\fastpca.py:49: UserWarning: torch.qr is deprecated in favor of torch.linalg.qr and will be removed in a future PyTorch release.
+The boolean parameter 'some' has been replaced with a string parameter 'mode'.
+Q, R = torch.qr(A, some)
+should be replaced with
+Q, R = torch.linalg.qr(A, 'reduced' if some else 'complete') (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\BatchLinearAlgebra.cpp:2491.)
+  (Q, _) = torch.qr(A)
+Epoch [1/10], train_pred_logloss: 1.3740, train_pred_accuracy: 0.5051, elbo_neg_ave: 1.4036, test_pred_logloss: 1.3387, test_pred_accuracy: 0.5154
+Epoch [1/10], Objective: 1.6573
+Epoch [2/10], train_pred_logloss: 1.2190, train_pred_accuracy: 0.5604, elbo_neg_ave: 1.2506, test_pred_logloss: 1.1882, test_pred_accuracy: 0.5677
+Epoch [2/10], Objective: 1.2927
+Epoch [3/10], train_pred_logloss: 1.1599, train_pred_accuracy: 0.6064, elbo_neg_ave: 1.1925, test_pred_logloss: 1.1289, test_pred_accuracy: 0.6179
+Epoch [3/10], Objective: 1.1929
+Epoch [4/10], train_pred_logloss: 1.1263, train_pred_accuracy: 0.6303, elbo_neg_ave: 1.1582, test_pred_logloss: 1.0989, test_pred_accuracy: 0.6421
+Epoch [4/10], Objective: 1.1489
+Epoch [5/10], train_pred_logloss: 1.0976, train_pred_accuracy: 0.6540, elbo_neg_ave: 1.1310, test_pred_logloss: 1.0736, test_pred_accuracy: 0.6625
+Epoch [5/10], Objective: 1.1201
+Epoch [6/10], train_pred_logloss: 1.0672, train_pred_accuracy: 0.6639, elbo_neg_ave: 1.1008, test_pred_logloss: 1.0416, test_pred_accuracy: 0.6699
+Epoch [6/10], Objective: 1.0888
+Epoch [7/10], train_pred_logloss: 1.0422, train_pred_accuracy: 0.6676, elbo_neg_ave: 1.0746, test_pred_logloss: 1.0209, test_pred_accuracy: 0.6735
+Epoch [7/10], Objective: 1.0608
+Epoch [8/10], train_pred_logloss: 1.0231, train_pred_accuracy: 0.6741, elbo_neg_ave: 1.0557, test_pred_logloss: 0.9994, test_pred_accuracy: 0.6774
+Epoch [8/10], Objective: 1.0390
+Epoch [9/10], train_pred_logloss: 1.0047, train_pred_accuracy: 0.6831, elbo_neg_ave: 1.0371, test_pred_logloss: 0.9796, test_pred_accuracy: 0.6879
+Epoch [9/10], Objective: 1.0203
+Epoch [10/10], train_pred_logloss: 0.9896, train_pred_accuracy: 0.6900, elbo_neg_ave: 1.0231, test_pred_logloss: 0.9634, test_pred_accuracy: 0.6979
+Epoch [10/10], Objective: 1.0024
+Epoch [1/10], train_pred_logloss: 0.9676, train_pred_accuracy: 0.7007, elbo_neg_ave: 0.9958, test_pred_logloss: 0.9993, test_pred_accuracy: 0.6912
+Epoch [1/10], Objective: 0.9816
+Epoch [2/10], train_pred_logloss: 0.9574, train_pred_accuracy: 0.7027, elbo_neg_ave: 0.9853, test_pred_logloss: 0.9857, test_pred_accuracy: 0.6988
+Epoch [2/10], Objective: 0.9665
+Epoch [3/10], train_pred_logloss: 0.9478, train_pred_accuracy: 0.7054, elbo_neg_ave: 0.9769, test_pred_logloss: 0.9729, test_pred_accuracy: 0.7020
+Epoch [3/10], Objective: 0.9570
+Epoch [4/10], train_pred_logloss: 0.9415, train_pred_accuracy: 0.7057, elbo_neg_ave: 0.9714, test_pred_logloss: 0.9673, test_pred_accuracy: 0.6994
+Epoch [4/10], Objective: 0.9494
+Epoch [5/10], train_pred_logloss: 0.9383, train_pred_accuracy: 0.7067, elbo_neg_ave: 0.9677, test_pred_logloss: 0.9623, test_pred_accuracy: 0.7033
+Epoch [5/10], Objective: 0.9448
+Epoch [6/10], train_pred_logloss: 0.9341, train_pred_accuracy: 0.7075, elbo_neg_ave: 0.9641, test_pred_logloss: 0.9582, test_pred_accuracy: 0.7056
+Epoch [6/10], Objective: 0.9410
+Epoch [7/10], train_pred_logloss: 0.9329, train_pred_accuracy: 0.7083, elbo_neg_ave: 0.9616, test_pred_logloss: 0.9536, test_pred_accuracy: 0.7044
+Epoch [7/10], Objective: 0.9383
+Epoch [8/10], train_pred_logloss: 0.9309, train_pred_accuracy: 0.7087, elbo_neg_ave: 0.9604, test_pred_logloss: 0.9502, test_pred_accuracy: 0.7047
+Epoch [8/10], Objective: 0.9356
+Epoch [9/10], train_pred_logloss: 0.9282, train_pred_accuracy: 0.7087, elbo_neg_ave: 0.9579, test_pred_logloss: 0.9504, test_pred_accuracy: 0.7048
+Epoch [9/10], Objective: 0.9338
+Epoch [10/10], train_pred_logloss: 0.9281, train_pred_accuracy: 0.7091, elbo_neg_ave: 0.9571, test_pred_logloss: 0.9470, test_pred_accuracy: 0.7037
+Epoch [10/10], Objective: 0.9321
+Epoch [1/10], train_pred_logloss: 0.9264, train_pred_accuracy: 0.7088, elbo_neg_ave: 0.9558, test_pred_logloss: 0.9476, test_pred_accuracy: 0.7031
+Epoch [1/10], Objective: 0.9307
+Epoch [2/10], train_pred_logloss: 0.9268, train_pred_accuracy: 0.7099, elbo_neg_ave: 0.9558, test_pred_logloss: 0.9465, test_pred_accuracy: 0.7036
+Epoch [2/10], Objective: 0.9297
+Epoch [3/10], train_pred_logloss: 0.9238, train_pred_accuracy: 0.7101, elbo_neg_ave: 0.9542, test_pred_logloss: 0.9431, test_pred_accuracy: 0.7038
+Epoch [3/10], Objective: 0.9288
+Epoch [4/10], train_pred_logloss: 0.9227, train_pred_accuracy: 0.7086, elbo_neg_ave: 0.9532, test_pred_logloss: 0.9424, test_pred_accuracy: 0.7037
+Epoch [4/10], Objective: 0.9273
+Epoch [5/10], train_pred_logloss: 0.9228, train_pred_accuracy: 0.7104, elbo_neg_ave: 0.9527, test_pred_logloss: 0.9410, test_pred_accuracy: 0.7033
+Epoch [5/10], Objective: 0.9268
+Epoch [6/10], train_pred_logloss: 0.9210, train_pred_accuracy: 0.7100, elbo_neg_ave: 0.9518, test_pred_logloss: 0.9412, test_pred_accuracy: 0.7045
+Epoch [6/10], Objective: 0.9259
+Epoch [7/10], train_pred_logloss: 0.9220, train_pred_accuracy: 0.7101, elbo_neg_ave: 0.9513, test_pred_logloss: 0.9389, test_pred_accuracy: 0.7030
+Epoch [7/10], Objective: 0.9254
+Epoch [8/10], train_pred_logloss: 0.9210, train_pred_accuracy: 0.7107, elbo_neg_ave: 0.9510, test_pred_logloss: 0.9374, test_pred_accuracy: 0.7056
+Epoch [8/10], Objective: 0.9247
+Epoch [9/10], train_pred_logloss: 0.9191, train_pred_accuracy: 0.7109, elbo_neg_ave: 0.9496, test_pred_logloss: 0.9392, test_pred_accuracy: 0.7049
+Epoch [9/10], Objective: 0.9239
+Epoch [10/10], train_pred_logloss: 0.9199, train_pred_accuracy: 0.7104, elbo_neg_ave: 0.9494, test_pred_logloss: 0.9368, test_pred_accuracy: 0.7049
+Epoch [10/10], Objective: 0.9231
+Epoch [1/10], train_pred_logloss: 0.9192, train_pred_accuracy: 0.7102, elbo_neg_ave: 0.9489, test_pred_logloss: 0.9393, test_pred_accuracy: 0.7053
+Epoch [1/10], Objective: 0.9226
+Epoch [2/10], train_pred_logloss: 0.9199, train_pred_accuracy: 0.7111, elbo_neg_ave: 0.9493, test_pred_logloss: 0.9380, test_pred_accuracy: 0.7051
+Epoch [2/10], Objective: 0.9225
+Epoch [3/10], train_pred_logloss: 0.9178, train_pred_accuracy: 0.7110, elbo_neg_ave: 0.9484, test_pred_logloss: 0.9365, test_pred_accuracy: 0.7054
+Epoch [3/10], Objective: 0.9220
+Epoch [4/10], train_pred_logloss: 0.9171, train_pred_accuracy: 0.7105, elbo_neg_ave: 0.9478, test_pred_logloss: 0.9359, test_pred_accuracy: 0.7048
+Epoch [4/10], Objective: 0.9211
+Epoch [5/10], train_pred_logloss: 0.9174, train_pred_accuracy: 0.7109, elbo_neg_ave: 0.9476, test_pred_logloss: 0.9353, test_pred_accuracy: 0.7051
+Epoch [5/10], Objective: 0.9211
+Epoch [6/10], train_pred_logloss: 0.9163, train_pred_accuracy: 0.7111, elbo_neg_ave: 0.9471, test_pred_logloss: 0.9358, test_pred_accuracy: 0.7070
+Epoch [6/10], Objective: 0.9205
+Epoch [7/10], train_pred_logloss: 0.9176, train_pred_accuracy: 0.7111, elbo_neg_ave: 0.9471, test_pred_logloss: 0.9339, test_pred_accuracy: 0.7051
+Epoch [7/10], Objective: 0.9203
+Epoch [8/10], train_pred_logloss: 0.9169, train_pred_accuracy: 0.7110, elbo_neg_ave: 0.9470, test_pred_logloss: 0.9329, test_pred_accuracy: 0.7048
+Epoch [8/10], Objective: 0.9201
+Epoch [9/10], train_pred_logloss: 0.9152, train_pred_accuracy: 0.7113, elbo_neg_ave: 0.9459, test_pred_logloss: 0.9348, test_pred_accuracy: 0.7052
+Epoch [9/10], Objective: 0.9195
+Epoch [10/10], train_pred_logloss: 0.9162, train_pred_accuracy: 0.7111, elbo_neg_ave: 0.9459, test_pred_logloss: 0.9326, test_pred_accuracy: 0.7054
+Epoch [10/10], Objective: 0.9190
+python d:\Maths_Y4\Project\Bayesian-Neural-Network-Project\Rebuilding_Slang\run_experiment.py --name="slang_mnist_experiment" --variant="L_32" --method="SLANG_COMPLETE" --cv=0
+args: Namespace(name='slang_mnist_experiment', variant='L_32', method='SLANG_COMPLETE', cv=0)
+c:\Users\peter\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\_reduction.py:51: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+d:\Maths_Y4\Project\Bayesian-Neural-Network-Project\Rebuilding_Slang\torchutils\fastpca.py:49: UserWarning: torch.qr is deprecated in favor of torch.linalg.qr and will be removed in a future PyTorch release.
+The boolean parameter 'some' has been replaced with a string parameter 'mode'.
+Q, R = torch.qr(A, some)
+should be replaced with
+Q, R = torch.linalg.qr(A, 'reduced' if some else 'complete') (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\BatchLinearAlgebra.cpp:2491.)
+  (Q, _) = torch.qr(A)
+Epoch [1/10], train_pred_logloss: 1.3519, train_pred_accuracy: 0.5344, elbo_neg_ave: 1.3853, test_pred_logloss: 1.3204, test_pred_accuracy: 0.5502
+Epoch [1/10], Objective: 1.6382
+Epoch [2/10], train_pred_logloss: 1.2065, train_pred_accuracy: 0.5802, elbo_neg_ave: 1.2372, test_pred_logloss: 1.1726, test_pred_accuracy: 0.5912
+Epoch [2/10], Objective: 1.2736
+Epoch [3/10], train_pred_logloss: 1.1404, train_pred_accuracy: 0.6052, elbo_neg_ave: 1.1728, test_pred_logloss: 1.1083, test_pred_accuracy: 0.6219
+Epoch [3/10], Objective: 1.1788
+Epoch [4/10], train_pred_logloss: 1.0922, train_pred_accuracy: 0.6400, elbo_neg_ave: 1.1237, test_pred_logloss: 1.0618, test_pred_accuracy: 0.6567
+Epoch [4/10], Objective: 1.1248
+Epoch [5/10], train_pred_logloss: 1.0553, train_pred_accuracy: 0.6510, elbo_neg_ave: 1.0867, test_pred_logloss: 1.0297, test_pred_accuracy: 0.6620
+Epoch [5/10], Objective: 1.0806
+Epoch [6/10], train_pred_logloss: 1.0326, train_pred_accuracy: 0.6604, elbo_neg_ave: 1.0639, test_pred_logloss: 1.0051, test_pred_accuracy: 0.6713
+Epoch [6/10], Objective: 1.0509
+Epoch [7/10], train_pred_logloss: 1.0184, train_pred_accuracy: 0.6661, elbo_neg_ave: 1.0488, test_pred_logloss: 0.9902, test_pred_accuracy: 0.6726
+Epoch [7/10], Objective: 1.0313
+Epoch [8/10], train_pred_logloss: 1.0090, train_pred_accuracy: 0.6679, elbo_neg_ave: 1.0392, test_pred_logloss: 0.9793, test_pred_accuracy: 0.6762
+Epoch [8/10], Objective: 1.0185
+Epoch [9/10], train_pred_logloss: 1.0000, train_pred_accuracy: 0.6721, elbo_neg_ave: 1.0319, test_pred_logloss: 0.9715, test_pred_accuracy: 0.6805
+Epoch [9/10], Objective: 1.0091
+Epoch [10/10], train_pred_logloss: 0.9958, train_pred_accuracy: 0.6722, elbo_neg_ave: 1.0273, test_pred_logloss: 0.9669, test_pred_accuracy: 0.6804
+Epoch [10/10], Objective: 1.0028
+Epoch [1/10], train_pred_logloss: 0.9812, train_pred_accuracy: 0.6772, elbo_neg_ave: 1.0090, test_pred_logloss: 0.9864, test_pred_accuracy: 0.6834
+Epoch [1/10], Objective: 0.9908
+Epoch [2/10], train_pred_logloss: 0.9770, train_pred_accuracy: 0.6769, elbo_neg_ave: 1.0046, test_pred_logloss: 0.9824, test_pred_accuracy: 0.6829
+Epoch [2/10], Objective: 0.9846
+Epoch [3/10], train_pred_logloss: 0.9724, train_pred_accuracy: 0.6788, elbo_neg_ave: 1.0008, test_pred_logloss: 0.9808, test_pred_accuracy: 0.6840
+Epoch [3/10], Objective: 0.9791
+Epoch [4/10], train_pred_logloss: 0.9706, train_pred_accuracy: 0.6780, elbo_neg_ave: 0.9991, test_pred_logloss: 0.9746, test_pred_accuracy: 0.6819
+Epoch [4/10], Objective: 0.9765
+Epoch [5/10], train_pred_logloss: 0.9684, train_pred_accuracy: 0.6776, elbo_neg_ave: 0.9964, test_pred_logloss: 0.9745, test_pred_accuracy: 0.6820
+Epoch [5/10], Objective: 0.9735
+Epoch [6/10], train_pred_logloss: 0.9672, train_pred_accuracy: 0.6777, elbo_neg_ave: 0.9953, test_pred_logloss: 0.9725, test_pred_accuracy: 0.6804
+Epoch [6/10], Objective: 0.9716
+Epoch [7/10], train_pred_logloss: 0.9649, train_pred_accuracy: 0.6783, elbo_neg_ave: 0.9942, test_pred_logloss: 0.9709, test_pred_accuracy: 0.6813
+Epoch [7/10], Objective: 0.9700
+Epoch [8/10], train_pred_logloss: 0.9640, train_pred_accuracy: 0.6778, elbo_neg_ave: 0.9927, test_pred_logloss: 0.9724, test_pred_accuracy: 0.6832
+Epoch [8/10], Objective: 0.9689
+Epoch [9/10], train_pred_logloss: 0.9642, train_pred_accuracy: 0.6780, elbo_neg_ave: 0.9925, test_pred_logloss: 0.9714, test_pred_accuracy: 0.6835
+Epoch [9/10], Objective: 0.9669
+Epoch [10/10], train_pred_logloss: 0.9625, train_pred_accuracy: 0.6790, elbo_neg_ave: 0.9912, test_pred_logloss: 0.9668, test_pred_accuracy: 0.6827
+Epoch [10/10], Objective: 0.9669
+Epoch [1/10], train_pred_logloss: 0.9615, train_pred_accuracy: 0.6771, elbo_neg_ave: 0.9907, test_pred_logloss: 0.9696, test_pred_accuracy: 0.6842
+Epoch [1/10], Objective: 0.9656
+Epoch [2/10], train_pred_logloss: 0.9617, train_pred_accuracy: 0.6778, elbo_neg_ave: 0.9901, test_pred_logloss: 0.9697, test_pred_accuracy: 0.6818
+Epoch [2/10], Objective: 0.9652
+Epoch [3/10], train_pred_logloss: 0.9597, train_pred_accuracy: 0.6784, elbo_neg_ave: 0.9893, test_pred_logloss: 0.9703, test_pred_accuracy: 0.6826
+Epoch [3/10], Objective: 0.9639
+Epoch [4/10], train_pred_logloss: 0.9602, train_pred_accuracy: 0.6775, elbo_neg_ave: 0.9894, test_pred_logloss: 0.9664, test_pred_accuracy: 0.6852
+Epoch [4/10], Objective: 0.9641
+Epoch [5/10], train_pred_logloss: 0.9595, train_pred_accuracy: 0.6775, elbo_neg_ave: 0.9885, test_pred_logloss: 0.9662, test_pred_accuracy: 0.6818
+Epoch [5/10], Objective: 0.9633
+Epoch [6/10], train_pred_logloss: 0.9597, train_pred_accuracy: 0.6771, elbo_neg_ave: 0.9885, test_pred_logloss: 0.9662, test_pred_accuracy: 0.6810
+Epoch [6/10], Objective: 0.9629
+Epoch [7/10], train_pred_logloss: 0.9586, train_pred_accuracy: 0.6785, elbo_neg_ave: 0.9882, test_pred_logloss: 0.9662, test_pred_accuracy: 0.6815
+Epoch [7/10], Objective: 0.9626
+Epoch [8/10], train_pred_logloss: 0.9586, train_pred_accuracy: 0.6773, elbo_neg_ave: 0.9876, test_pred_logloss: 0.9678, test_pred_accuracy: 0.6829
+Epoch [8/10], Objective: 0.9623
+Epoch [9/10], train_pred_logloss: 0.9592, train_pred_accuracy: 0.6774, elbo_neg_ave: 0.9878, test_pred_logloss: 0.9677, test_pred_accuracy: 0.6829
+Epoch [9/10], Objective: 0.9612
+Epoch [10/10], train_pred_logloss: 0.9579, train_pred_accuracy: 0.6777, elbo_neg_ave: 0.9872, test_pred_logloss: 0.9638, test_pred_accuracy: 0.6833
+Epoch [10/10], Objective: 0.9617
+Epoch [1/10], train_pred_logloss: 0.9577, train_pred_accuracy: 0.6773, elbo_neg_ave: 0.9871, test_pred_logloss: 0.9662, test_pred_accuracy: 0.6825
+Epoch [1/10], Objective: 0.9610
+Epoch [2/10], train_pred_logloss: 0.9580, train_pred_accuracy: 0.6770, elbo_neg_ave: 0.9868, test_pred_logloss: 0.9672, test_pred_accuracy: 0.6821
+Epoch [2/10], Objective: 0.9609
+Epoch [3/10], train_pred_logloss: 0.9563, train_pred_accuracy: 0.6774, elbo_neg_ave: 0.9863, test_pred_logloss: 0.9677, test_pred_accuracy: 0.6828
+Epoch [3/10], Objective: 0.9600
+Epoch [4/10], train_pred_logloss: 0.9572, train_pred_accuracy: 0.6769, elbo_neg_ave: 0.9866, test_pred_logloss: 0.9641, test_pred_accuracy: 0.6843
+Epoch [4/10], Objective: 0.9605
+Epoch [5/10], train_pred_logloss: 0.9565, train_pred_accuracy: 0.6772, elbo_neg_ave: 0.9860, test_pred_logloss: 0.9637, test_pred_accuracy: 0.6818
+Epoch [5/10], Objective: 0.9600
+Epoch [6/10], train_pred_logloss: 0.9572, train_pred_accuracy: 0.6767, elbo_neg_ave: 0.9862, test_pred_logloss: 0.9640, test_pred_accuracy: 0.6812
+Epoch [6/10], Objective: 0.9598
+Epoch [7/10], train_pred_logloss: 0.9562, train_pred_accuracy: 0.6778, elbo_neg_ave: 0.9860, test_pred_logloss: 0.9645, test_pred_accuracy: 0.6821
+Epoch [7/10], Objective: 0.9597
+Epoch [8/10], train_pred_logloss: 0.9564, train_pred_accuracy: 0.6771, elbo_neg_ave: 0.9856, test_pred_logloss: 0.9659, test_pred_accuracy: 0.6839
+Epoch [8/10], Objective: 0.9596
+Epoch [9/10], train_pred_logloss: 0.9570, train_pred_accuracy: 0.6766, elbo_neg_ave: 0.9859, test_pred_logloss: 0.9662, test_pred_accuracy: 0.6832
+Epoch [9/10], Objective: 0.9588
+Epoch [10/10], train_pred_logloss: 0.9558, train_pred_accuracy: 0.6779, elbo_neg_ave: 0.9855, test_pred_logloss: 0.9625, test_pred_accuracy: 0.6837
+Epoch [10/10], Objective: 0.9594
+Done submitting jobs!
+
+Standard Error:
+'pwd' is not recognized as an internal or external command,
+operable program or batch file.
+INFO:artemis:========== Running Experiment: slang_complete.slang_mnist_experiment.L_1 ==========
+INFO:artemis:Saving Result for Experiment "2025.02.08T02.43.24.278724-slang_complete.slang_mnist_experiment.L_1"
+INFO:artemis:========== Done Running Experiment: slang_complete.slang_mnist_experiment.L_1 ==========
+INFO:artemis:========== Running Experiment: slang_complete.slang_mnist_experiment.L_2 ==========
+INFO:artemis:Saving Result for Experiment "2025.02.08T02.53.57.478113-slang_complete.slang_mnist_experiment.L_2"
+INFO:artemis:========== Done Running Experiment: slang_complete.slang_mnist_experiment.L_2 ==========
+INFO:artemis:========== Running Experiment: slang_complete.slang_mnist_experiment.L_4 ==========
+INFO:artemis:Saving Result for Experiment "2025.02.08T03.04.38.368090-slang_complete.slang_mnist_experiment.L_4"
+INFO:artemis:========== Done Running Experiment: slang_complete.slang_mnist_experiment.L_4 ==========
+INFO:artemis:========== Running Experiment: slang_complete.slang_mnist_experiment.L_8 ==========
+INFO:artemis:Saving Result for Experiment "2025.02.08T03.14.32.396732-slang_complete.slang_mnist_experiment.L_8"
+INFO:artemis:========== Done Running Experiment: slang_complete.slang_mnist_experiment.L_8 ==========
+INFO:artemis:========== Running Experiment: slang_complete.slang_mnist_experiment.L_16 ==========
+INFO:artemis:Saving Result for Experiment "2025.02.08T03.24.08.897640-slang_complete.slang_mnist_experiment.L_16"
+INFO:artemis:========== Done Running Experiment: slang_complete.slang_mnist_experiment.L_16 ==========
+INFO:artemis:========== Running Experiment: slang_complete.slang_mnist_experiment.L_32 ==========
+INFO:artemis:Saving Result for Experiment "2025.02.08T03.33.47.292077-slang_complete.slang_mnist_experiment.L_32"
+INFO:artemis:========== Done Running Experiment: slang_complete.slang_mnist_experiment.L_32 ==========

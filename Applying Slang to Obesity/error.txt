@@ -1,0 +1,21 @@
+Standard Error:
+'pwd' is not recognized as an internal or external command,
+operable program or batch file.
+INFO:artemis:========== Running Experiment: slang_complete.slang_mnist_experiment.L_1 ==========
+INFO:artemis:Saving Result for Experiment "2025.02.08T02.43.24.278724-slang_complete.slang_mnist_experiment.L_1"
+INFO:artemis:========== Done Running Experiment: slang_complete.slang_mnist_experiment.L_1 ==========
+INFO:artemis:========== Running Experiment: slang_complete.slang_mnist_experiment.L_2 ==========
+INFO:artemis:Saving Result for Experiment "2025.02.08T02.53.57.478113-slang_complete.slang_mnist_experiment.L_2"
+INFO:artemis:========== Done Running Experiment: slang_complete.slang_mnist_experiment.L_2 ==========
+INFO:artemis:========== Running Experiment: slang_complete.slang_mnist_experiment.L_4 ==========
+INFO:artemis:Saving Result for Experiment "2025.02.08T03.04.38.368090-slang_complete.slang_mnist_experiment.L_4"
+INFO:artemis:========== Done Running Experiment: slang_complete.slang_mnist_experiment.L_4 ==========
+INFO:artemis:========== Running Experiment: slang_complete.slang_mnist_experiment.L_8 ==========
+INFO:artemis:Saving Result for Experiment "2025.02.08T03.14.32.396732-slang_complete.slang_mnist_experiment.L_8"
+INFO:artemis:========== Done Running Experiment: slang_complete.slang_mnist_experiment.L_8 ==========
+INFO:artemis:========== Running Experiment: slang_complete.slang_mnist_experiment.L_16 ==========
+INFO:artemis:Saving Result for Experiment "2025.02.08T03.24.08.897640-slang_complete.slang_mnist_experiment.L_16"
+INFO:artemis:========== Done Running Experiment: slang_complete.slang_mnist_experiment.L_16 ==========
+INFO:artemis:========== Running Experiment: slang_complete.slang_mnist_experiment.L_32 ==========
+INFO:artemis:Saving Result for Experiment "2025.02.08T03.33.47.292077-slang_complete.slang_mnist_experiment.L_32"
+INFO:artemis:========== Done Running Experiment: slang_complete.slang_mnist_experiment.L_32 ==========
