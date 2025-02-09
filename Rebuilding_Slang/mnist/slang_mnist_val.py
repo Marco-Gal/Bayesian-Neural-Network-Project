@@ -8,7 +8,7 @@ data_set = 'mnist_val'
 
 # set the model parameters
 model_params = {
-    'hidden_sizes': [400,400],
+    'hidden_sizes': [10,10],
     'activation_function': 'relu',
     'prior_precision': None, # Will be tuned
     'bias_prior_precision': 1e-6,

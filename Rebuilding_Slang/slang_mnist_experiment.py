@@ -10,7 +10,7 @@ prior_prec = 1/math.exp(-2)**2
 # set the model parameters
 model_params = {
     # 'hidden_sizes': [400,400],
-    'hidden_sizes': [2,2],
+    'hidden_sizes': [10,10],
 
     'activation_function': 'relu',
     'prior_precision': prior_prec, # All values of L preferred this value
@@ -54,8 +54,8 @@ mnist_complete = slang_mnist_complete.slang_complete.add_variant(experiment_name
 
 # Define the parameters of the experiment:
 # Ls = [1, 2, 4, 8, 16, 32]
-# Ls = [2]
-Ls = [1]
+Ls = [8]
+# Ls = [1]
 
 variants = []
 

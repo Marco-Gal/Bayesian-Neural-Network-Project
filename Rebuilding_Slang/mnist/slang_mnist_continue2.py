@@ -12,7 +12,7 @@ prior_prec = 1/math.exp(-2)**2
 
 # set the model parameters
 model_params = {
-    'hidden_sizes': [400,400],
+    'hidden_sizes': [10,10],
     'activation_function': 'relu',
     'prior_precision': prior_prec, # All values of L preferred this value
     'bias_prior_precision': 1e-6,

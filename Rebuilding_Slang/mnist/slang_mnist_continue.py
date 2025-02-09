@@ -23,7 +23,7 @@ MNIST_OPTIM_PARAM = {
 
 
 MNIST_MODEL_PARAM = {
-    'hidden_sizes': [400,400],
+    'hidden_sizes': [10,10],
     'activation_function': 'relu',
     'prior_precision': 5.0,
     'bias_prior_precision': 1e-6,
@@ -40,7 +40,7 @@ def slang_continue(data_set='mnist',
                    optimizer_params=MNIST_OPTIM_PARAM,
                    model_state_dict=None,
                    optimizer_state_dict=None,
-                   new_train_set_size=60000,
+                   new_train_set_size=1477,
                    objective='avneg_loglik_categorical',
                    metrics=['pred_avneg_loglik_categorical', 'softmax_predictive_accuracy', 'avneg_elbo_categorical'],
                    normalize={'x': False, 'y': False},
