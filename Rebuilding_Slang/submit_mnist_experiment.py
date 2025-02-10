@@ -14,7 +14,7 @@ def submit_python_jobs(name, variants, method='BBB', cv=0):
     basedir = os.path.dirname(os.path.abspath(__file__))
     print(basedir)
     for i, variant in enumerate(variants):
-        command = "python "+os.path.join(basedir, 'run_experiment.py')+" --name=\"" + str(name) + "\" --variant=\"" + str(variant) + "\" --method=\"" + str(method) + "\" --cv=" + str(cv)
+        command = "python " + "'" +os.path.join(basedir, 'run_experiment.py')+ "'" + " --name=\"" + str(name) + "\" --variant=\"" + str(variant) + "\" --method=\"" + str(method) + "\" --cv=" + str(cv)
         print(command)
         exit_status = subprocess.call(command, shell=True)
         if exit_status == 1:

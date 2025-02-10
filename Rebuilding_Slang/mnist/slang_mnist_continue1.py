@@ -20,7 +20,7 @@ model_params = {
     'noise_precision': None } # Classification Problem
 
 optimizer_params = {
-    'num_epochs': 100,
+    'num_epochs': 500,
     'batch_size': 200,
     'learning_rate': 0.1,
     'momentum_rate': 0.9,

@@ -85,7 +85,7 @@ def slang_complete(val_data_set='mnist_val',
     if init_hook is not None:
         init_hook(model, optimizer)
     results_dict = run_experiment(data, model, model_params, predict_fn, kl_fn, optimizer, optimizer_params, objective, metrics, closure_factory, normalize, save_params, val_seed, use_cuda, iter_hook)
-    print(optimizer.state)
+    # print(optimizer.state)
     if end_hook is not None:
         end_hook(results_dict, model, optimizer)
 
@@ -112,5 +112,10 @@ def slang_complete(val_data_set='mnist_val',
         if end_hook is not None:
             end_hook(results_dict, model, optimizer)
 
+    import pickle
+
+    # Save results_dict to a pickle file
+    with open('results_dict.pkl', 'wb') as f:
+        pickle.dump(results_dict, f)
 
     return results_dict
