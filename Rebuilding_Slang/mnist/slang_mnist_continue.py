@@ -9,8 +9,10 @@ from lib.general_utilities import set_seeds
 import default_parameters as defaults
 from slang_experiments import init_slang_experiment
 
+
+#set elsewhere
 MNIST_OPTIM_PARAM = {
-    'num_epochs': 100,
+    'num_epochs': 1,
     'batch_size': 200,
     'learning_rate': 0.1,
     'momentum_rate': 0.9,
@@ -21,7 +23,7 @@ MNIST_OPTIM_PARAM = {
     's_init': 1,
     'L': 1 }
 
-
+#set elsewhere
 MNIST_MODEL_PARAM = {
     'hidden_sizes': [10,10],
     'activation_function': 'relu',

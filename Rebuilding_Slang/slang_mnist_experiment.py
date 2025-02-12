@@ -5,7 +5,8 @@ import slang_mnist_complete as slang_mnist_complete
 experiment_name = "slang_mnist_experiment"
 val_data_set = 'mnist_val'
 continue_data_set = 'mnist'
-prior_prec = 1/math.exp(-2)**2
+# prior_prec = 1/math.exp(-2)**2
+prior_prec = 1
 
 # set the model parameters
 model_params = {
@@ -18,7 +19,7 @@ model_params = {
     'noise_precision': None } # Classification Problem
 
 optimizer_params = {
-    'num_epochs': 100,            # should be 100
+    'num_epochs': 400,            # should be 100
     # 'num_epochs': 10,            # should be 100
 
     'batch_size': 200,

@@ -11,16 +11,17 @@ data_set = 'mnist'
 
 prior_prec = 1/math.exp(-2)**2
 
-# set the model parameters
+# set in slang_mnist_experiment
+
 model_params = {
     'hidden_sizes': [10,10],
     'activation_function': 'relu',
     'prior_precision': prior_prec, # All values of L preferred this value
     'bias_prior_precision': 1e-6,
     'noise_precision': None } # Classification Problem
-
+# set in slang_mnist_experiment
 optimizer_params = {
-    'num_epochs': 500,
+    'num_epochs': 2,
     'batch_size': 200,
     'learning_rate': 0.1,
     'momentum_rate': 0.9,
