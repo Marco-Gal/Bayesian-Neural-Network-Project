@@ -10,7 +10,7 @@ import pdb
 
 import default_parameters as defaults # 
 from slang_experiments import init_slang_experiment # 
-
+#set elsewhere
 MNIST_OPTIM_PARAM = {
     'num_epochs': 10,
     # 'num_epochs': 1,
@@ -24,6 +24,8 @@ MNIST_OPTIM_PARAM = {
     's_init': 1,
     'L': 1 }
 
+
+#set elsewhere
 MNIST_MODEL_PARAM = {
     # 'hidden_sizes': [400,400],
     'hidden_sizes': [10,10],
@@ -60,7 +62,7 @@ def slang_complete(val_data_set='mnist_val',
                    optimizer_params=MNIST_OPTIM_PARAM,
                 #    continue_train_set_size=60000,
                    continue_train_set_size = 1477,
-                   num_continues = 0,
+                   num_continues = 3,
                    objective='avneg_loglik_categorical',
                    metrics=['pred_avneg_loglik_categorical', 'softmax_predictive_accuracy', 'avneg_elbo_categorical'],
                    normalize={'x': False, 'y': False},
