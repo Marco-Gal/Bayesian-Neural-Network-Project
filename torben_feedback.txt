@@ -1,0 +1,29 @@
+Writing stuff 
+- in the introduction i think the balance should be improved. we only have a single sentence on what we do. And the rest is on general theory. we want to shift the focus of the introduction to what we do. What the key purpose of this work is. #
+- also the introduction you want to summarise your key findings. 'what we find out is this and this and this'
+- if you go through the intro MFVI isn't really mentioned. mention overconfidence in NNs. in the first para 'nns are unable to reason about their own uncertainty' people say if you output a probability vector about classes then that is some sort of confidence. What sort of confidence do these actually provide.
+- the writing style overall is pretty appropriate. one thing is that some of the titles are not consistent when it comes to capitalising titles.
+- another thing he likes at beginning of chapter 2. write such an introduction for all chapters
+- figure 2.1 there should be a superscript 1 to the weight.
+- for the backprop algo, point 5 in the algo isn't necessarily true, other algos exist after you calculate the derivatives. this is steepest descent algorithm I think.
+- in section 2.3 
+- before chapter 3 there are two sections that we're missing. One is about MCMC. This shouldn't be a huge section but it should be at least mentioned at least what kind of order it is. 
+- for VI it goes straight into how it works. we want to see more about history and origins, motivation behind it etc. ' where does this come from'. lcould go just in front of section 3.1
+- some small thing is that for the KL i think one needs q to be absolutely continuous wrt pi or something. at the bottom of page 9 'requires us to evaluate the ebidence', but we haven't shown where the evidence comes from 
+- also we define the elbo, why is it known as the evidence lower bound?
+- log p of 
+on pg 11 there is write notation what is (\phi)
+- in 3.2 the second or tyhird sentence there are theta as model params and then we introduce it after
+- for the next bit 
+- you want to maybe have a subsection on choices of q 'eg q is a normal' why they are chosen and all that. 
+- have an intro to 3.3 rather than why not mean field as a whole subsection. also in that location you want to somewhere describe the intuition and idea of slang.
+- for chapter 4 i would write an introduction. what are you trying to achieve with the experiments? WHy do the chapters that you have there make sense? expand on saying like 'when doing VI a few natural questions arise. one is 'how good is the variational approxiamtion' 'how good is this mean field assumption?' 'how much better can we get when we can relax it?' there was this question about where to put something about reliability of the model. This could go elsewhere. i think i would put it exactly where it is at the moment 
+- fix obseisty data citation
+- cite the nuts paper
+- paragraph starting wiht 'both networks' , maybe make this it's owb subsection around the architecture.
+- maybe one on data, one on training, priors, architecture etc
+- page 20 there was a question. neal 95, 
+- firgure 4.2 speak about why the weight uncertainty isn't necessarily like improvoing the posterior 
+- my main point of criticism at the moment is that there's near a super clear red line throughout the draft. we are missing this constant reminder of what did you do and why did you do this? why are you doing these experiments? wHy are you writing about variational inference? Why are you writing about these things?
+- two of the standard phrases 'while there exists lots of literature on xyz, but there isn't that much careful analysis of this' ' clear guide for practitioners on when to choose or abandon mfvi is not clear'. introduce chapters and sections linking the parts.
+the entire VI and MFVI section could read smoother
