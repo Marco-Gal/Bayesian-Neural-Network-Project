@@ -1,0 +1,15 @@
+digraph {
+	graph [size="12,12"]
+	node [align=left fontname=monospace fontsize=10 height=0.2 ranksep=0.1 shape=box style=filled]
+	1772096952400 [label="
+ ()" fillcolor=darkolivegreen1]
+	1772297518720 [label=SumBackward0]
+	1772298092848 -> 1772297518720
+	1772298092848 [label=MulBackward0]
+	1772298093760 -> 1772298092848
+	1772297970480 [label="x
+ (3)" fillcolor=lightblue]
+	1772297970480 -> 1772298093760
+	1772298093760 [label=AccumulateGrad]
+	1772297518720 -> 1772096952400
+}
