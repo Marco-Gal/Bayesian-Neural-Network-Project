@@ -39,7 +39,6 @@ def init_slang_experiment(data, model_params, optimizer_params, train_set_size=N
                            hidden_sizes=model_params['hidden_sizes'],
                            output_size=output_size,
                            act_func=act_func)
-
     if use_cuda:
         model = model.cuda()
 

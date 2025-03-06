@@ -98,7 +98,6 @@ def run_experiment(data,
     #####################################
     ########### Training Loop ###########
     #####################################
-
     for epoch in range(num_epochs):
 
         # Set model in training mode
@@ -158,7 +157,6 @@ def run_experiment(data,
 
     # Evaluate model
     with torch.no_grad():
-        print(train_metrics, test_metrics, final_metrics, normalize)
         final_metrics = evaluate_model(predict_fn, train_metrics, test_metrics, final_metrics, x_train, y_train, x_test, y_test, optimizer_params['eval_mc_samples'], normalize)
 
     # create the dictionary of results that will be saved
