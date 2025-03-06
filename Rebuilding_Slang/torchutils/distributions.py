@@ -125,7 +125,6 @@ class LowRankMultivariateNormal(MultivariateNormal):
 
     def rsample(self, n_samples=1):
         eps = torch.randn((self.d, n_samples), dtype=self.loc.dtype, device=self.loc.device)
-        print(self.loc.dtype)
         try:
             if self.use_cov:
                 eps_k = torch.randn((self.k, n_samples), dtype=self.loc.dtype, device=self.loc.device)
