@@ -24,7 +24,7 @@ def evaluate_model(predict_fn, train_metrics, test_metrics, metric_history, x_tr
 
     # Get test predictions
     preds = predict_fn(x=x_test, mc_samples=eval_mc_samples)
-    print(preds.shape)
+    
 
     # Unnormalize test predictions
     if normalize['y']:
