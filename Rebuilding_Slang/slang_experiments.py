@@ -96,7 +96,6 @@ def slang_base(data_set='australian_presplit',
     set_seeds(seed)
     data = Dataset(data_set=data_set, data_folder=DEFAULT_DATA_FOLDER)
     train_set_size=data.get_train_size()
-    print('This:'+str(train_set_size))
     model, predict_fn, kl_fn, closure_factory, optimizer = init_slang_experiment(data, model_params, optimizer_params, train_set_size=train_set_size, use_cuda=use_cuda)
 
     if init_hook is not None:
