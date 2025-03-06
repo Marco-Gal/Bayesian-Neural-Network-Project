@@ -98,7 +98,6 @@ def run_experiment(data,
     #####################################
     ########### Training Loop ###########
     #####################################
-
     for epoch in range(num_epochs):
 
         # Set model in training mode
