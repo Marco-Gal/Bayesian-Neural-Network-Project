@@ -5,7 +5,7 @@
 # @Last modified time: 18-08-23
 
 def evaluate_model(predict_fn, train_metrics, test_metrics, metric_history, x_train, y_train, x_test, y_test, eval_mc_samples, normalize):
-
+    print(x_train.shape)
     # Normalize train x
     if normalize['x']:
         x_train = (x_train-normalize['x_means'])/normalize['x_stds']
