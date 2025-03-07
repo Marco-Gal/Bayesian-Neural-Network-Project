@@ -161,5 +161,6 @@ def run_experiment(data,
 
     # create the dictionary of results that will be saved
     results_dict = create_results_dictionary(save_params, final_metrics, metric_history, objective_history, model, optimizer)
+    print(optimizer.state['mean'])
 
     return results_dict

@@ -87,7 +87,7 @@ class Dataset():
             self.train_set = CustomDataset(X_tensor, y_tensor, train=True)#, transform=transforms.ToTensor())
             self.test_set = CustomDataset(X_tensor, y_tensor, train=False)#, transform=transforms.ToTensor())
 
-            self.tast = 'classification'
+            self.task = 'classification'
             self.num_features = 23
             self.num_classes = 7
 

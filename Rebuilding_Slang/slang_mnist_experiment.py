@@ -19,7 +19,7 @@ model_params = {
     'noise_precision': None } # Classification Problem
 
 optimizer_params = {
-    'num_epochs': 1, # this is the one that changes everyting            # should be 100
+    'num_epochs': 1000, # this is the one that changes everyting            # should be 100
     # 'num_epochs': 10,            # should be 100
 
     'batch_size': 200,
