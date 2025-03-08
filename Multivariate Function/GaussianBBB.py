@@ -60,13 +60,9 @@ class MeanFieldLayer(nn.Module):
         num_samples = x.shape[0]
         # rsample carries out reparameterisation trick for us   
         weights = self.q_w().rsample((num_samples,))  # (num_samples, input_dim, output_dim).
-        # print('dim weights', weights.shape)
 
         biases = self.q_b().rsample((num_samples,)).unsqueeze(1)  # (num_samples, batch_size, output_dim)
-        # print('dim biases', biases.shape)
-        # print('dim x', x.shape)
-        # print('dim x @ weights', (x @ weights).shape)
-        # print('dim x @ weights + biases', (x @ weights + biases).shape)
+     
         return x @ weights + biases # (num_samples, batch_size, output_dim).
 
 
@@ -121,7 +117,6 @@ class MeanFieldBNN(nn.Module):
 
         # Expand dimensions of x to (num_samples, batch_size, input_dim).
         x = torch.unsqueeze(x, 0).repeat(num_samples, 1, 1)
-        print(x.shape)
         # Propagate x through network
         for layer in self.network:
             x = layer(x)
