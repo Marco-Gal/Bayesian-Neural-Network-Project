@@ -49,7 +49,6 @@ def get_accuracy(experiment_base, experiment_name, variant, mc_10_multiplier, da
         test_x, test_y = data.load_full_test_set()
 
         for i in range(mc_10_multiplier):
-            print(i)
             with torch.no_grad():
                 pred_y = predict_fn(test_x, 10)
                 if i==0:
