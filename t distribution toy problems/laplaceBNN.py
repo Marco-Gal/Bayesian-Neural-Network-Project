@@ -1,5 +1,5 @@
 import torch
-from torch import nn
+import torch.nn as nn
 import numpy as np
 
 class Lap_MeanFieldLayer(nn.Module):
@@ -22,11 +22,11 @@ class Lap_MeanFieldLayer(nn.Module):
         # Variational parameters q(theta)
         self.w_loc_q = nn.Parameter(torch.zeros(input_dim, output_dim), requires_grad=True)
         self.w_log_scale_q = nn.Parameter(
-            torch.ones(input_dim, output_dim) * torch.log(torch.tensor(self.prior_scale)), requires_grad=True
+            torch.ones(input_dim, output_dim) * torch.log(torch.tensor(self.prior_scale/2)), requires_grad=True
         )  
         self.b_loc_q = nn.Parameter(torch.zeros(output_dim), requires_grad=True)
         self.b_log_scale_q = nn.Parameter(
-            torch.ones(output_dim) * torch.log(torch.tensor(self.prior_scale)), requires_grad=True
+            torch.ones(output_dim) * torch.log(torch.tensor(self.prior_scale/2)), requires_grad=True
         )
 
     # the priors do not change so could be stored as attributes, but
