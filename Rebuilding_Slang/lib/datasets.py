@@ -33,7 +33,7 @@ DEFAULT_DATA_FOLDER = "~/data"
 class CustomDataset(Dataset):
     def __init__(self, X, y, train=True, transform=None):
         X_train, X_test, y_train, y_test = train_test_split(
-            X, y, test_size=0.7, random_state=42
+            X, y, test_size=0.75, random_state=42
         )
         self.X = X_train if train else X_test
         self.y = y_train if train else y_test
@@ -81,15 +81,13 @@ class Dataset():
 
             # Convert to tensor
             y_tensor = torch.tensor(y_load['NObeyesdad'].to_numpy(), dtype=torch.long)
-
-            x_tr, x_te, y_tr, y_te = train_test_split(X_tensor, y_tensor, test_size=0.7, random_state=42)
+          
+            x_tr, x_te, y_tr, y_te = train_test_split(X_tensor, y_tensor, test_size=0.75, random_state=42)
             x_mean, x_std = x_tr.mean(dim=0), x_tr.std(dim=0)
-            X_tensor = (x_tr - x_mean) / x_std
-            
+            X_tensor = (X_tensor - x_mean) / x_std
+        
             self.train_set = CustomDataset(X_tensor, y_tensor, train=True)#, transform=transforms.ToTensor())
             self.test_set = CustomDataset(X_tensor, y_tensor, train=False)#, transform=transforms.ToTensor())
-
-
 
             self.task = 'classification'
             self.num_features = 23
@@ -131,8 +129,8 @@ class Dataset():
 
             full_train_set = CustomDataset(X_tensor, y_tensor, train=True)#, transform=transforms.ToTensor())
             
-            self.train_set = torch.utils.data.Subset(full_train_set, np.arange(start=0, stop=500))
-            self.test_set = torch.utils.data.Subset(full_train_set, np.arange(start=500, stop=633))
+            self.train_set = torch.utils.data.Subset(full_train_set, np.arange(start=0, stop=420))
+            self.test_set = torch.utils.data.Subset(full_train_set, np.arange(start=420, stop=527))
 
             self.task = "classification"
             self.num_features = 23
