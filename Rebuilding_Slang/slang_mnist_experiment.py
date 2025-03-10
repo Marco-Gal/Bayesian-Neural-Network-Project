@@ -6,7 +6,7 @@ experiment_name = "slang_mnist_experiment"
 val_data_set = 'mnist_val'
 continue_data_set = 'mnist'
 # prior_prec = 1/math.exp(-2)**2
-prior_prec = 1
+prior_prec = 5 # weights i think, we want var = 2/10 = 1/5
 
 # set the model parameters
 model_params = {
@@ -15,11 +15,11 @@ model_params = {
 
     'activation_function': 'relu',
     'prior_precision': prior_prec, # All values of L preferred this value
-    'bias_prior_precision': 1e-6,
+    'bias_prior_precision': 1, #1e-6,
     'noise_precision': None } # Classification Problem
 
 optimizer_params = {
-    'num_epochs': 4000, # this is the one that changes everyting            # should be 100
+    'num_epochs': 2000, # this is the one that changes everyting            # should be 100
     # 'num_epochs': 10,            # should be 100
 
     'batch_size': 200,
@@ -55,7 +55,7 @@ mnist_complete = slang_mnist_complete.slang_complete.add_variant(experiment_name
 
 # Define the parameters of the experiment:
 # Ls = [1, 2, 4, 8, 16, 32]
-Ls = [32]
+Ls = [2]
 # Ls = [1]
 
 variants = []
