@@ -146,7 +146,6 @@ class MLP(Module):
             activation = x
         else:
             activation = x.expand(noise[0].shape[0], -1, -1)
-        print(activation.shape)
         if indgrad:
             activations = [activation]
             linear_combs = []
