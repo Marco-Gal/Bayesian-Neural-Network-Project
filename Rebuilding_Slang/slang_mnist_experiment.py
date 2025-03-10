@@ -19,7 +19,7 @@ model_params = {
     'noise_precision': None } # Classification Problem
 
 optimizer_params = {
-    'num_epochs': 2000, # this is the one that changes everyting            # should be 100
+    'num_epochs': 4000, # this is the one that changes everyting            # should be 100
     # 'num_epochs': 10,            # should be 100
 
     'batch_size': 200,
@@ -55,7 +55,7 @@ mnist_complete = slang_mnist_complete.slang_complete.add_variant(experiment_name
 
 # Define the parameters of the experiment:
 # Ls = [1, 2, 4, 8, 16, 32]
-Ls = [2]
+Ls = [32]
 # Ls = [1]
 
 variants = []
