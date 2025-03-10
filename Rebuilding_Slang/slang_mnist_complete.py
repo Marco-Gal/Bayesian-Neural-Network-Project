@@ -117,7 +117,7 @@ def slang_complete(val_data_set='mnist_val',
     import pickle
 
     # Save results_dict to a pickle file
-    with open('results_dict.pkl', 'wb') as f:
+    with open('THIS_IS_THE_FINAL_SLANG.pkl', 'wb') as f:
         pickle.dump(results_dict, f)
     print(optimizer.kl_divergence())
     return results_dict
