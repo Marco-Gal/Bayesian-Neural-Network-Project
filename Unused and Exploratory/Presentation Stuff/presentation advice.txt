@@ -1,0 +1,13 @@
+- content, structure, delivery and visual aids are the criteria
+- not super important you have all the technical details. want to focus on more having a nice story. good overall package that you are selling.
+- suggestion is to think about the structure first and what would be the different section headings. what is the narrative that you want to tell 
+- don't overload the slides. focus on one figure
+- everything is well labelled, carefully positioned 
+- any complicated model, maybe there should be equations
+- want it to be overall engaging. you don't want this to be a dry lecture.
+- want to really cover what we have done in the project. What are the key things that are new and exciting? in order to present that, what little bit of background do we need to present?
+- the trick is that you can always introduct a NN and if you think that people in the audiance know stuff, you can just show the notation. 
+- maybe show like an animation of a BNN training it's kinda cool.
+- emphasise the things that we did rather than just showing existing stuff.
+- maybe swap it a bit rather than blocking into 1 big block each.
+- in terms of timeline. we want the presentation done by tuesday next week. then we want to practise presenting it as a group. Make sure it's a good, snappy presentation.
